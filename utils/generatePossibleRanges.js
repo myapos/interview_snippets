@@ -157,22 +157,6 @@ const generatePossibleRanges = (range) => {
     }
   }
   console.log("sumPairs", sumPairs);
-  /* 
-  
-  swappedArray = utils.swapElementsInArray(
-    utils.swapElementsInArray(firstArray, 0, 3),
-    1,
-    2
-  );
-
-  console.log("swappedArray", swappedArray);
-
-  combinations = [
-    ...utils.generateCombinationSwaps({
-      array: swappedArray,
-      combinations,
-    }),
-  ]; */
 
   console.log("combinations", combinations);
   console.log("num of combinations", combinations.length);
