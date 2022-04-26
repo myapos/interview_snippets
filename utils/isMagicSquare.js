@@ -1,71 +1,37 @@
 import * as utils from "./";
 
-//! it will return if a square is magic
-//! it will calculate all su rows, columns and diagonals
-//! if they are all equal then it will return true or false
-function isMagicSquare(arr) {
-  let elementToCompare;
-  let restElements;
-
+function isMagicSquare({ square, dimensions }) {
   const sums = [];
-  // extract rows
-  const [row1, row2, row3] = arr;
+  let primaryDiagonal = [];
+  let reverseDiagonal = [];
 
-  // calculate sums of rows
-  const sumOfRow1 = utils.sumOfArray(row1);
-  const sumOfRow2 = utils.sumOfArray(row2);
-  const sumOfRow3 = utils.sumOfArray(row3);
+  square.forEach((row, rowIndex) => {
+    sums.push(utils.sumOfArray(row));
+    let col = [];
 
-  // calculate sums of columns
-  let firstCol = [];
-  let secondCol = [];
-  let thirdCol = [];
+    //! calculate sums of cols
+    row.forEach((_, colIndex) => {
+      const elem = square[colIndex][rowIndex];
+      col.push(elem);
 
-  arr.map((row, index) => {
-    // console.log(row);
-    const [first, second, third] = row;
-    firstCol = [...firstCol, first];
-    secondCol = [...secondCol, second];
-    thirdCol = [...thirdCol, third];
+      if (rowIndex === colIndex) {
+        primaryDiagonal.push(square[rowIndex][colIndex]);
+      }
+    });
+
+    // save reverseDiagonal
+    reverseDiagonal.push(square[rowIndex][square.length - 1 - rowIndex]);
+    //! calculate sums of columns
+    sums.push(utils.sumOfArray(col));
   });
 
-  const sumOfCol1 = utils.sumOfArray(firstCol);
-  const sumOfCol2 = utils.sumOfArray(secondCol);
-  const sumOfCol3 = utils.sumOfArray(thirdCol);
+  //! calculate sums of diagonals
+  sums.push(utils.sumOfArray(primaryDiagonal));
+  sums.push(utils.sumOfArray(reverseDiagonal));
 
-  // calculate sums of diagonals
-  const primaryDiagonal = [arr[0][0], arr[1][1], arr[2][2]];
-  const reverseDiagonal = [arr[0][2], arr[1][1], arr[2][0]];
-
-  const sumOfPrimaryDiagonal = utils.sumOfArray(primaryDiagonal);
-  const sumOfReverseDiagonal = utils.sumOfArray(reverseDiagonal);
-
-  sums.push(
-    sumOfRow1,
-    sumOfRow2,
-    sumOfRow3,
-    sumOfCol1,
-    sumOfCol2,
-    sumOfCol3,
-    sumOfPrimaryDiagonal,
-    sumOfReverseDiagonal
-  );
-
+  // console.log("sums", sums);
   const isMagic = utils.checkArrayElementsEquality(sums);
 
   return isMagic;
 }
-
 export default isMagicSquare;
-
-const squareA = [
-  [5, 9, 5],
-  [6, 7, 6],
-  [8, 3, 8],
-];
-
-const squareB = [
-  [8, 3, 4],
-  [1, 5, 9],
-  [6, 7, 2],
-];

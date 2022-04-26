@@ -5,22 +5,22 @@ import * as utils from ".";
 
 const generateSingleSquare = ({ range, dimensions }) => {
   const { length } = range;
-  let tripletIndex = 0;
+  let rowIndex = 0;
   const square = [];
-  let triplet = [];
+  let row = [];
 
   for (let i = 0; i < length; i++) {
     const mod = i % dimensions;
     // console.log("mod", mod);
-    if (mod < 2) {
-      // console.log("writing to triplet", tripletIndex);
-      triplet.push(range[i]);
+    if (mod < dimensions - 1) {
+      // console.log("writing to row", rowIndex);
+      row.push(range[i]);
     } else {
-      // change triplet
-      tripletIndex++;
-      triplet.push(range[i]);
-      square.push(triplet);
-      triplet = [];
+      // change row
+      rowIndex++;
+      row.push(range[i]);
+      square.push(row);
+      row = [];
     }
   }
 

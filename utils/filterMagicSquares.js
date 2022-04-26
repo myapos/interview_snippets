@@ -1,10 +1,10 @@
 import * as utils from "./";
 
-const filterMagicSquares = (squares) => {
+const filterMagicSquares = ({ squares, dimensions }) => {
   const magicSquares = [];
 
   for (const square of squares) {
-    const isMagic = utils.isMagicSquare(square);
+    const isMagic = utils.isMagicSquare({ square, dimensions });
     const alreadyExists = utils.checkIfSquareAlreadyExists(
       magicSquares,
       square

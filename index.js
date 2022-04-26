@@ -50,5 +50,24 @@ function formingMagicSquare(s) {
   }
 }
 
-const dimensions = 2;
+const dimensions = 1;
 const magicSquares = utils.generateMagicSquares({ dimensions });
+
+console.log("magicSquares", magicSquares);
+console.log(`got ${magicSquares.length} magicSquares`);
+
+const square = [
+  [8, 3, 4],
+  [1, 5, 9],
+  [6, 7, 2],
+];
+
+/* 
+00 01 02
+10 11 12
+20 21 22
+
+
+02, 11, 20
+*/
+// console.log(utils.isMagicSquare({ square, dimensions }));
