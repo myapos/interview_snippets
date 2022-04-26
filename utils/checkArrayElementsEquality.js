@@ -1,6 +1,6 @@
 //! it will check if all elements of an array are equal
 
-const checkArrayEquality = (arr) => {
+const checkArrayElementsEquality = (arr) => {
   const [first, ...restElements] = arr;
 
   const isEqual = restElements.reduce((acc, curr) => {
@@ -10,4 +10,4 @@ const checkArrayEquality = (arr) => {
   return isEqual;
 };
 
-export default checkArrayEquality;
+export default checkArrayElementsEquality;

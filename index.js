@@ -81,8 +81,15 @@ const magicC = [
 const testA = [3, 5, 3];
 const testB = [3, 3, 3];
 
-// utils.checkArrayEquality(testB);
+// utils.checkArrayElementsEquality(testB);
 console.log(utils.factorial(9));
+const combinations = utils.generatePossibleRanges(4);
+
+// console.log(utils.popArray([3, 1, 2]));
+// console.log(combinations);
+// console.log(combinations.length);
+
+// console.log(utils.swapElementsInArray([1, 2, 3, 4], 2, 0));
 /* [ 
   [ 8, 5, 8 ], 
   [ 7, 7, 7 ], 

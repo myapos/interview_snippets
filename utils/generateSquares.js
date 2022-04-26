@@ -20,7 +20,7 @@ const generateSquares_ = ({ sums, combinations }) => {
 
         const tempSums = [sums[i], sums[j], sums[l]];
 
-        const sumsAreEqual = utils.checkArrayEquality(tempSums);
+        const sumsAreEqual = utils.checkArrayElementsEquality(tempSums);
 
         // console.log("tempSums", tempSums);
         // console.log(`comparing ${i} - ${j} ${sums[i]} - ${sums[j]}`);
@@ -47,8 +47,6 @@ const generateSquares = ({ range }) => {
 
   // prepei na dimiourgisw ola ta pithana ranges pou iparxoun me ennia arithmous
   // dld 9!
-
-  
 
   utils.generateSingleSquare({ range, dimensions });
   console.log("num of squares", squares.length);

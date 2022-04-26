@@ -10,9 +10,15 @@ import combinationsOfLength from "./combinationsOfLength";
 import generateCombinations from "./generateCombinations";
 import generateSquares from "./generateSquares";
 import filterMagicSquares from "./filterMagicSquares";
-import checkArrayEquality from "./checkArrayEquality";
+import checkArrayElementsEquality from "./checkArrayElementsEquality";
 import generateSingleSquare from "./generateSingleSquare";
 import factorial from "./factorial";
+import generatePossibleRanges from "./generatePossibleRanges";
+import swapElementsInArray from "./swapElementsInArray";
+import checkArrayExistence from "./checkArrayExistence";
+import compareArrays from "./compareArrays";
+import generateCombinationSwaps from "./generateCombinationSwaps";
+import popArray from "./popArray";
 
 export {
   sumOfArray,
@@ -27,7 +33,13 @@ export {
   generateCombinations,
   generateSquares,
   filterMagicSquares,
-  checkArrayEquality,
+  checkArrayElementsEquality,
   generateSingleSquare,
   factorial,
+  generatePossibleRanges,
+  swapElementsInArray,
+  checkArrayExistence,
+  compareArrays,
+  generateCombinationSwaps,
+  popArray,
 };

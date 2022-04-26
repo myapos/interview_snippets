@@ -51,7 +51,7 @@ function isMagicSquare(arr) {
     sumOfReverseDiagonal
   );
 
-  const isMagic = utils.checkArrayEquality(sums);
+  const isMagic = utils.checkArrayElementsEquality(sums);
 
   return isMagic;
 }
