@@ -146,8 +146,6 @@ const generatePossibleRanges = (range) => {
         sumPairs[j][1]
       );
 
-      console.log("swappedArray", swappedArray);
-
       combinations = [
         ...utils.generateCombinationSwaps({
           array: swappedArray,
