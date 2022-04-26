@@ -6,7 +6,7 @@ const generateSquares = ({ dimensions }) => {
   const numbers = utils.createNumbersInRange(range);
 
   //! get all permutations of numbers in range
-  const permutations = utils.generatePossiblePermutations({
+  const permutations = utils.generatePossiblePermutationsSimpleRecursion({
     generatedPermutations: [],
     currentPermutation: [],
     elemementsToPermute: numbers,

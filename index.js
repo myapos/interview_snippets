@@ -50,7 +50,7 @@ function formingMagicSquare(s) {
   }
 }
 
-const dimensions = 1;
+const dimensions = 3;
 const magicSquares = utils.generateMagicSquares({ dimensions });
 
 console.log("magicSquares", magicSquares);

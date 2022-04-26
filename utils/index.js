@@ -13,7 +13,7 @@ import filterMagicSquares from "./filterMagicSquares";
 import checkArrayElementsEquality from "./checkArrayElementsEquality";
 import generateSingleSquare from "./generateSingleSquare";
 import factorial from "./factorial";
-import generatePossiblePermutations from "./generatePossiblePermutations";
+import { generatePossiblePermutationsSimpleRecursion } from "./generatePossiblePermutations";
 import swapElementsInArray from "./swapElementsInArray";
 import checkArrayExistence from "./checkArrayExistence";
 import compareArrays from "./compareArrays";
@@ -37,7 +37,7 @@ export {
   checkArrayElementsEquality,
   generateSingleSquare,
   factorial,
-  generatePossiblePermutations,
+  generatePossiblePermutationsSimpleRecursion,
   swapElementsInArray,
   checkArrayExistence,
   compareArrays,

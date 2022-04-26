@@ -2,7 +2,7 @@ import * as utils from ".";
 
 //! it will calculate all possible permutations
 //! generated permutations, current permutation, elements to permute
-const generatePossiblePermutations = ({
+export const generatePossiblePermutationsSimpleRecursion = ({
   generatedPermutations,
   currentPermutation,
   elemementsToPermute,
@@ -27,7 +27,7 @@ const generatePossiblePermutations = ({
       (elem) => elem !== element
     );
 
-    const perm = generatePossiblePermutations({
+    const perm = generatePossiblePermutationsSimpleRecursion({
       currentPermutation: nextPermutation,
       elemementsToPermute: remainingElements,
       generatedPermutations,
@@ -37,4 +37,5 @@ const generatePossiblePermutations = ({
   return generatedPermutations;
 };
 
+const generatePossiblePermutations = () => {};
 export default generatePossiblePermutations;
