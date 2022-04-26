@@ -2,23 +2,23 @@ import * as utils from ".";
 
 //! it will calculate all possible permutations
 //! generated permutations, current permutation, elements to permute
-const generatePossiblePermutations = (
+const generatePossiblePermutations = ({
   generatedPermutations,
   currentPermutation,
   elemementsToPermute,
-  permutations
-) => {
-  const hasElementsToPermute = elemementsToPermute.length > 0;
+}) => {
+  const { length } = elemementsToPermute;
+  const hasElementsToPermute = length > 0;
 
   if (!hasElementsToPermute) {
     //! exit condition
     //! add current permutation to generated permutations
 
-    generatedPermutations = [...generatedPermutations, ...currentPermutation];
-    permutations.push(generatedPermutations);
+    generatedPermutations.push(currentPermutation);
   }
+
   //! otherwise loop through the elementsToPermute
-  for (let i = 0; i < elemementsToPermute.length; i++) {
+  for (let i = 0; i < length; i++) {
     const element = elemementsToPermute[i];
     const nextPermutation = [...currentPermutation, element];
 
@@ -27,15 +27,14 @@ const generatePossiblePermutations = (
       (elem) => elem !== element
     );
 
-    generatePossiblePermutations(
+    generatePossiblePermutations({
+      currentPermutation: nextPermutation,
+      elemementsToPermute: remainingElements,
       generatedPermutations,
-      nextPermutation,
-      remainingElements,
-      permutations
-    );
+    });
   }
 
-  return permutations;
+  return generatedPermutations;
 };
 
 export default generatePossiblePermutations;
