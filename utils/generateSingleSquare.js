@@ -11,9 +11,9 @@ const generateSingleSquare = ({ range, dimensions }) => {
 
   for (let i = 0; i < length; i++) {
     const mod = i % dimensions;
-    console.log("mod", mod);
+    // console.log("mod", mod);
     if (mod < 2) {
-      console.log("writing to triplet", tripletIndex);
+      // console.log("writing to triplet", tripletIndex);
       triplet.push(range[i]);
     } else {
       // change triplet
@@ -22,10 +22,9 @@ const generateSingleSquare = ({ range, dimensions }) => {
       square.push(triplet);
       triplet = [];
     }
-
-    console.log("square", square);
   }
 
+  // console.log("square", square);
   return square;
 };
 

@@ -1,8 +1,8 @@
 import * as utils from "./";
 
-// it will return if a square is magic
-// it will calculate all su rows, columns and diagonals
-// if they are all equal then it will return true or false
+//! it will return if a square is magic
+//! it will calculate all su rows, columns and diagonals
+//! if they are all equal then it will return true or false
 function isMagicSquare(arr) {
   let elementToCompare;
   let restElements;

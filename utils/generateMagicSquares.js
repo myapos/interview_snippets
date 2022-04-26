@@ -1,20 +1,13 @@
 import * as utils from "./";
 
-const generateMagicSquares = (range) => {
-  const sums = [];
+const generateMagicSquares = ({ dimensions }) => {
+  const squares = utils.generateSquares({ dimensions });
+  console.log(`got ${squares.length} squares`);
 
-  // const combinations = utils.generateCombinations(range);
+  //! filter only the magic squares
+  const magicSquares = utils.filterMagicSquares(squares);
 
-  // console.log("combinations", combinations);
-
-  // const squares = utils.generateSquares({ sums, combinations });
-  const squares = utils.generateSquares({ range });
-
-  // const magicSquares = utils.filterMagicSquares(squares);
-
-  // console.log("magic squares", magicSquares);
-  // return magicSquares ;
-  return [];
+  return magicSquares;
 };
 
 export default generateMagicSquares;

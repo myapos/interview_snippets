@@ -5,11 +5,6 @@ const input = [
   [1, 5, 8],
   [6, 4, 2],
 ];
-const magic = [
-  [8, 3, 4],
-  [1, 5, 9],
-  [6, 7, 2],
-];
 
 function formingMagicSquare(s) {
   // it will hold objects of Cost class
@@ -55,44 +50,5 @@ function formingMagicSquare(s) {
   }
 }
 
-// const magicSquares = utils.generateMagicSquares([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-
-const magicA = [
-  [5, 9, 5],
-  [6, 7, 6],
-  [8, 3, 8],
-];
-
-const magicB = [
-  [8, 3, 4],
-  [1, 5, 9],
-  [6, 7, 2],
-];
-
-const magicC = [
-  [4, 6, 4],
-  [4, 6, 4],
-  [4, 6, 4],
-];
-
-// console.log(`calculated ${magicSquares.length} magic squares`);
-// console.log("exists:", utils.checkIfSquareAlreadyExists(magicSquares, magicB));
-
-const testA = [3, 5, 3];
-const testB = [3, 3, 3];
-
-const inRange = 3;
-
-const range = Array.from({ length: inRange }, (_, i) => i + 1);
-console.log(utils.factorial(inRange));
-
-//! generated permutations, current permutation, elements to permute
-
-const permutations = utils.generatePossiblePermutations({
-  generatedPermutations: [],
-  currentPermutation: [],
-  elemementsToPermute: range,
-});
-
-console.log("permutations", permutations);
-console.log("num of permutations", permutations.length);
+const dimensions = 2;
+const magicSquares = utils.generateMagicSquares({ dimensions });

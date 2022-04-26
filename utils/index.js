@@ -19,6 +19,7 @@ import checkArrayExistence from "./checkArrayExistence";
 import compareArrays from "./compareArrays";
 import generateCombinationSwaps from "./generateCombinationSwaps";
 import popArray from "./popArray";
+import createNumbersInRange from "./createNumbersInRange";
 
 export {
   sumOfArray,
@@ -42,4 +43,5 @@ export {
   compareArrays,
   generateCombinationSwaps,
   popArray,
+  createNumbersInRange,
 };

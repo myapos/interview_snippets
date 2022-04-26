@@ -27,7 +27,7 @@ const generatePossiblePermutations = ({
       (elem) => elem !== element
     );
 
-    generatePossiblePermutations({
+    const perm = generatePossiblePermutations({
       currentPermutation: nextPermutation,
       elemementsToPermute: remainingElements,
       generatedPermutations,
