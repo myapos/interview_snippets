@@ -81,10 +81,19 @@ const magicC = [
 const testA = [3, 5, 3];
 const testB = [3, 3, 3];
 
-const inRange = 5;
+const inRange = 3;
 // utils.checkArrayElementsEquality(testB);
 console.log(utils.factorial(inRange));
-const combinations = utils.generatePossibleRanges(inRange);
+// generated permutations, current permutation, elements to permute
+const permutations = utils.generatePossiblePermutations(
+  [],
+  [],
+  [1, 2, 3, 4, 5],
+  []
+);
+
+console.log("permutations", permutations);
+console.log("num of permutations", permutations.length);
 
 // console.log(utils.popArray([3, 1, 2]));
 // console.log(combinations);
