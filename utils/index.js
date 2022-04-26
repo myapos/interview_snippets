@@ -11,6 +11,8 @@ import generateCombinations from "./generateCombinations";
 import generateSquares from "./generateSquares";
 import filterMagicSquares from "./filterMagicSquares";
 import checkArrayEquality from "./checkArrayEquality";
+import generateSingleSquare from "./generateSingleSquare";
+import factorial from "./factorial";
 
 export {
   sumOfArray,
@@ -26,4 +28,6 @@ export {
   generateSquares,
   filterMagicSquares,
   checkArrayEquality,
+  generateSingleSquare,
+  factorial,
 };

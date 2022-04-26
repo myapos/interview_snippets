@@ -51,13 +51,8 @@ function isMagicSquare(arr) {
     sumOfReverseDiagonal
   );
 
-  // console.log(sums);
-
   const isMagic = utils.checkArrayEquality(sums);
 
-  // if (sumToCheck === 15 && isMagic) {
-  //   // console.log("isMagic", arr);
-  // }
   return isMagic;
 }
 

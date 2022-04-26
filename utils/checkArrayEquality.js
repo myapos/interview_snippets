@@ -4,7 +4,7 @@ const checkArrayEquality = (arr) => {
   const [first, ...restElements] = arr;
 
   const isEqual = restElements.reduce((acc, curr) => {
-    return curr === first && true;
+    return curr === first && acc;
   }, true);
 
   return isEqual;

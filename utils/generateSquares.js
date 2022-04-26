@@ -4,7 +4,7 @@ import * as utils from ".";
 //! first it will calculate the sums of each row and
 //! will extract only the sums that are equal
 //! it will create triplets of these values
-const generateSquares = ({ sums, combinations }) => {
+const generateSquares_ = ({ sums, combinations }) => {
   const squares = [];
 
   combinations.forEach((slice) => {
@@ -20,15 +20,12 @@ const generateSquares = ({ sums, combinations }) => {
 
         const tempSums = [sums[i], sums[j], sums[l]];
 
+        const sumsAreEqual = utils.checkArrayEquality(tempSums);
+
         // console.log("tempSums", tempSums);
         // console.log(`comparing ${i} - ${j} ${sums[i]} - ${sums[j]}`);
-        if (
-          (sums[i] === sums[j] && sums[i] === sums[l]) ||
-          (sums[j] === sums[l] && sums[i] === sums[j])
-          // i !== j &&
-          // i !== l &&
-          // j !== l
-        ) {
+        if (sumsAreEqual && sums[i] === 15) {
+          // console.log("sumsAreEqual", sumsAreEqual, tempSums);
           // console.log(
           // 	`comparing ${i} - ${j} - ${l}  ${sums[i]} - ${sums[j]} - ${sums[l]} in rows combinations: ${combinations[i]} - ${combinations[j]} - ${combinations[l]}`
           // );
@@ -40,7 +37,21 @@ const generateSquares = ({ sums, combinations }) => {
     }
   }
 
+  console.log("num of squares", squares.length);
   return squares;
 };
 
+const generateSquares = ({ range }) => {
+  const squares = [];
+  const dimensions = 3;
+
+  // prepei na dimiourgisw ola ta pithana ranges pou iparxoun me ennia arithmous
+  // dld 9!
+
+  
+
+  utils.generateSingleSquare({ range, dimensions });
+  console.log("num of squares", squares.length);
+  return squares;
+};
 export default generateSquares;

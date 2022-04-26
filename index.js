@@ -55,7 +55,7 @@ function formingMagicSquare(s) {
   }
 }
 
-const magicSquares = utils.generateMagicSquares([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+// const magicSquares = utils.generateMagicSquares([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
 const magicA = [
   [5, 9, 5],
@@ -75,4 +75,16 @@ const magicC = [
   [4, 6, 4],
 ];
 
-console.log("exists:", utils.checkIfSquareAlreadyExists(magicSquares, magicB));
+// console.log(`calculated ${magicSquares.length} magic squares`);
+// console.log("exists:", utils.checkIfSquareAlreadyExists(magicSquares, magicB));
+
+const testA = [3, 5, 3];
+const testB = [3, 3, 3];
+
+// utils.checkArrayEquality(testB);
+console.log(utils.factorial(9));
+/* [ 
+  [ 8, 5, 8 ], 
+  [ 7, 7, 7 ], 
+  [ 6, 9, 6 ] 
+], */
