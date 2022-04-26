@@ -10,28 +10,29 @@ const generatePossiblePermutations = (
 ) => {
   const hasElementsToPermute = elemementsToPermute.length > 0;
 
-  if (hasElementsToPermute) {
-    for (let i = 0; i < elemementsToPermute.length; i++) {
-      const element = elemementsToPermute[i];
-      const nextPermutation = [...currentPermutation, element];
+  if (!hasElementsToPermute) {
+    //! exit condition
+    //! add current permutation to generated permutations
 
-      //! remove element from elements to permute
-      const remainingElements = elemementsToPermute.filter(
-        (elem) => elem !== element
-      );
-
-      generatePossiblePermutations(
-        generatedPermutations,
-        nextPermutation,
-        remainingElements,
-        permutations
-      );
-    }
-  } else {
-    // add current permutation to generated permutations
     generatedPermutations = [...generatedPermutations, ...currentPermutation];
-    // console.log("generatedPermutations", generatedPermutations);
     permutations.push(generatedPermutations);
+  }
+  //! otherwise loop through the elementsToPermute
+  for (let i = 0; i < elemementsToPermute.length; i++) {
+    const element = elemementsToPermute[i];
+    const nextPermutation = [...currentPermutation, element];
+
+    //! remove element from elements to permute
+    const remainingElements = elemementsToPermute.filter(
+      (elem) => elem !== element
+    );
+
+    generatePossiblePermutations(
+      generatedPermutations,
+      nextPermutation,
+      remainingElements,
+      permutations
+    );
   }
 
   return permutations;
