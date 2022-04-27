@@ -21,6 +21,8 @@ import compareArrays from "./compareArrays";
 import generateCombinationSwaps from "./generateCombinationSwaps";
 import popArray from "./popArray";
 import createNumbersInRange from "./createNumbersInRange";
+import formingMagicSquare from "./formingMagicSquare";
+import pickingNumbers from "./picikingNumbers";
 
 export {
   sumOfArray,
@@ -46,4 +48,6 @@ export {
   generateCombinationSwaps,
   popArray,
   createNumbersInRange,
+  formingMagicSquare,
+  pickingNumbers,
 };
