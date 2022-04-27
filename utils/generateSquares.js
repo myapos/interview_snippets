@@ -12,6 +12,10 @@ const generateSquares = ({ dimensions }) => {
     elemementsToPermute: numbers,
   });
 
+  // const permutations = utils.generatePossiblePermutationsRecursiveHeaps({
+  //   arr: numbers,
+  // });
+
   //! get all possible squares
 
   permutations.forEach((permutation, index) => {

@@ -14,6 +14,7 @@ import checkArrayElementsEquality from "./checkArrayElementsEquality";
 import generateSingleSquare from "./generateSingleSquare";
 import factorial from "./factorial";
 import { generatePossiblePermutationsSimpleRecursion } from "./generatePossiblePermutations";
+import generatePossiblePermutationsRecursiveHeaps from "./generatePossiblePermutations";
 import swapElementsInArray from "./swapElementsInArray";
 import checkArrayExistence from "./checkArrayExistence";
 import compareArrays from "./compareArrays";
@@ -38,6 +39,7 @@ export {
   generateSingleSquare,
   factorial,
   generatePossiblePermutationsSimpleRecursion,
+  generatePossiblePermutationsRecursiveHeaps,
   swapElementsInArray,
   checkArrayExistence,
   compareArrays,

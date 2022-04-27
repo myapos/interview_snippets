@@ -7,67 +7,32 @@ const input = [
 ];
 
 function formingMagicSquare(s) {
-  // it will hold objects of Cost class
-  let totalCosts = [];
-  let numOfReplacements = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  let range = [0, 1, 2];
-  let combinations = combinationsOfLength(range);
-  let squares = [];
-  // Write your code here
-  // test if input is magic square already
+  const dimensions = 3;
+  const magicSquares = utils.generateMagicSquares({ dimensions });
+  console.log("magicSquares", magicSquares);
+  console.log(`got ${magicSquares.length} magicSquares`);
 
-  if (utils.isMagicSquare(s)) {
-    console.log("already magic square");
-  } else {
-    console.log("processing...");
+  let minCost = 100000;
 
-    for (const [outerIndex, row] of s.entries()) {
-      console.log("row", row, " outerIndex", outerIndex);
+  magicSquares.forEach((magicSquare, outerIndex) => {
+    let cost = 0; //! for each magic square
 
-      for (let i = 0; i < numOfReplacements.length; i++) {
-        const isInFirstRow = outerIndex === 0;
+    magicSquare.forEach((magicRow, magicIndex) => {
+      s.forEach((row, index) => {
+        cost =
+          Math.abs(
+            magicSquares[outerIndex][magicIndex][index] - s[magicIndex][index]
+          ) + cost;
+      });
+    });
 
-        if (isInFirstRow) {
-          // only for the first element for start
-
-          const newSquare = deepCopy(s);
-
-          // replace
-          newSquare[outerIndex][0] = numOfReplacements[i];
-          const squareAlreadyExists = utils.checkIfSquareAlreadyExists(
-            squares,
-            newSquare
-          );
-          const isMagic = utils.isMagicSquare(newSquare);
-
-          if (!squareAlreadyExists && isMagic) {
-            squares.push(newSquare);
-          }
-        }
-      }
+    if (cost < minCost) {
+      minCost = cost;
     }
-    console.log("squares", squares);
-  }
+  });
+
+  console.log("minCost", minCost);
+  return minCost;
 }
 
-const dimensions = 3;
-const magicSquares = utils.generateMagicSquares({ dimensions });
-
-console.log("magicSquares", magicSquares);
-console.log(`got ${magicSquares.length} magicSquares`);
-
-const square = [
-  [8, 3, 4],
-  [1, 5, 9],
-  [6, 7, 2],
-];
-
-/* 
-00 01 02
-10 11 12
-20 21 22
-
-
-02, 11, 20
-*/
-// console.log(utils.isMagicSquare({ square, dimensions }));
+formingMagicSquare(input);
