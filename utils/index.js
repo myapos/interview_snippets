@@ -23,6 +23,12 @@ import popArray from "./popArray";
 import createNumbersInRange from "./createNumbersInRange";
 import formingMagicSquare from "./formingMagicSquare";
 import pickingNumbers from "./picikingNumbers";
+import reverseString from "./reverseString";
+import palindrome from "./palindrome";
+import decimalToBinary from "./decimalToBinary";
+import sum from "./sum";
+import binarySearch from "./binarySearch";
+import fibonacci from "./fibonacci";
 
 export {
   sumOfArray,
@@ -50,4 +56,10 @@ export {
   createNumbersInRange,
   formingMagicSquare,
   pickingNumbers,
+  reverseString,
+  palindrome,
+  decimalToBinary,
+  sum,
+  binarySearch,
+  fibonacci,
 };
