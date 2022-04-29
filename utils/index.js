@@ -29,6 +29,8 @@ import decimalToBinary from "./decimalToBinary";
 import sum from "./sum";
 import binarySearch from "./binarySearch";
 import fibonacci from "./fibonacci";
+import mergeSort from "./mergeSort";
+import linkedListReversal from "./linkedListReversal";
 
 export {
   sumOfArray,
@@ -62,4 +64,6 @@ export {
   sum,
   binarySearch,
   fibonacci,
+  mergeSort,
+  linkedListReversal,
 };
