@@ -36,6 +36,7 @@ import mergeTwoSortedLinkedLists from "./mergeTwoSortedLinkedLists";
 import * as List from "./List";
 import printListWithRecursionPure from "./printListWithRecursionPure";
 import * as Tree from "./Tree";
+import factorialWithCaching from "./factorialWithCaching";
 
 export {
   sumOfArray,
@@ -54,6 +55,7 @@ export {
   generateSingleSquare,
   factorial,
   factorialTCR,
+  factorialWithCaching,
   generatePossiblePermutationsSimpleRecursion,
   generatePossiblePermutationsRecursiveHeaps,
   swapElementsInArray,

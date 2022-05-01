@@ -55,6 +55,10 @@ const insertNodeToBinarySearchTree = (head, node) => {
 //! it will print leafs of a binary search tree
 //! it will accept an array of visited nodes
 //! and an array to collect leafs
+//! the visited is not really needed here.
+//! usually it is used to avoid circles in graphs
+//! so this is a more generic approach for DFS algorithm
+//! and could be used with small variation to graphs too
 const printLeafs = (node, visited, leafs) => {
   const isNode = node !== null;
   if (!isNode) {
