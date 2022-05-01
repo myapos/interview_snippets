@@ -13,6 +13,7 @@ import filterMagicSquares from "./filterMagicSquares";
 import checkArrayElementsEquality from "./checkArrayElementsEquality";
 import generateSingleSquare from "./generateSingleSquare";
 import factorial from "./factorial";
+import factorialTCR from "./factorialTCR";
 import { generatePossiblePermutationsSimpleRecursion } from "./generatePossiblePermutations";
 import generatePossiblePermutationsRecursiveHeaps from "./generatePossiblePermutations";
 import swapElementsInArray from "./swapElementsInArray";
@@ -31,6 +32,10 @@ import binarySearch from "./binarySearch";
 import fibonacci from "./fibonacci";
 import mergeSort from "./mergeSort";
 import linkedListReversal from "./linkedListReversal";
+import mergeTwoSortedLinkedLists from "./mergeTwoSortedLinkedLists";
+import * as List from "./List";
+import printListWithRecursionPure from "./printListWithRecursionPure";
+import * as Tree from "./Tree";
 
 export {
   sumOfArray,
@@ -48,6 +53,7 @@ export {
   checkArrayElementsEquality,
   generateSingleSquare,
   factorial,
+  factorialTCR,
   generatePossiblePermutationsSimpleRecursion,
   generatePossiblePermutationsRecursiveHeaps,
   swapElementsInArray,
@@ -66,4 +72,8 @@ export {
   fibonacci,
   mergeSort,
   linkedListReversal,
+  mergeTwoSortedLinkedLists,
+  List,
+  printListWithRecursionPure,
+  Tree,
 };

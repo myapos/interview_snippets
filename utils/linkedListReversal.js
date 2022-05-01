@@ -1,23 +1,5 @@
-class Node {
-  constructor(data, next) {
-    this.data = data;
-    this.next = null;
+import * as utils from "./";
 
-    if (this.next) {
-      this.next = next;
-    }
-  }
-}
-
-class LinkedList {
-  constructor(head) {
-    this.head = null;
-
-    if (head) {
-      this.head = head;
-    }
-  }
-}
 const printListWithRecursion = (list, collect) => {
   if (list.next === null) {
     collect.push(list.data);
@@ -28,24 +10,14 @@ const printListWithRecursion = (list, collect) => {
   printListWithRecursion(list.next, collect);
 };
 
-const printListWithRecursionPure = (list) => {
-  if (list.next === null) {
-    return [list.data];
-  }
-
-  const dataArr = printListWithRecursionPure(list.next);
-
-  return [list.data, ...dataArr];
-};
-
 const buildLinkedList = () => {
-  const list = new LinkedList();
-  const head = new Node(1, null);
+  const list = new utils.List.LinkedList();
+  const head = new utils.List.Node(1, null);
 
-  const node1 = new Node(2, null);
-  const node2 = new Node(3, null);
-  const node3 = new Node(4, null);
-  const tail = new Node(5, null);
+  const node1 = new utils.List.Node(2, null);
+  const node2 = new utils.List.Node(3, null);
+  const node3 = new utils.List.Node(4, null);
+  const tail = new utils.List.Node(5, null);
 
   head.next = node1;
   node1.next = node2;
@@ -72,7 +44,7 @@ const reverseList = (node) => {
 
 const linkedListReversal = () => {
   const list = buildLinkedList();
-  const collect = printListWithRecursionPure(list.head);
+  const collect = utils.printListWithRecursionPure(list.head);
   console.log("collect", collect);
 
   const rev = reverseList(list.head);
