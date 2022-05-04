@@ -11,10 +11,10 @@ class Node {
 
 class LinkedList {
   constructor(head) {
-    this.head = null;
+    this.node = null;
 
     if (head) {
-      this.head = head;
+      this.node = head;
     }
   }
 }

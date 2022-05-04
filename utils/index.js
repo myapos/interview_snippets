@@ -37,7 +37,12 @@ import * as List from "./List";
 import printListWithRecursionPure from "./printListWithRecursionPure";
 import * as Tree from "./Tree";
 import factorialWithCaching from "./factorialWithCaching";
-
+import linkedListReversalFromRange from "./linkedListReversalFromRange";
+import buildLinkedList from "./buildLinkedList";
+import reverseList from "./reverseList";
+import reverseListWithArray from "./reverseListWithArray";
+import findNodeInListByIndex from "./findNodeInListByIndex";
+import swapNodesInList from "./swapNodesInList";
 export {
   sumOfArray,
   isMagicSquare,
@@ -78,4 +83,10 @@ export {
   List,
   printListWithRecursionPure,
   Tree,
+  linkedListReversalFromRange,
+  buildLinkedList,
+  reverseList,
+  reverseListWithArray,
+  findNodeInListByIndex,
+  swapNodesInList,
 };
