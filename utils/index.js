@@ -43,6 +43,9 @@ import reverseList from "./reverseList";
 import reverseListWithArray from "./reverseListWithArray";
 import findNodeInListByIndex from "./findNodeInListByIndex";
 import swapNodesInList from "./swapNodesInList";
+import twoSum from "./twoSum";
+import validSudoku from "./validSudoku";
+
 export {
   sumOfArray,
   isMagicSquare,
@@ -89,4 +92,6 @@ export {
   reverseListWithArray,
   findNodeInListByIndex,
   swapNodesInList,
+  twoSum,
+  validSudoku,
 };
