@@ -1,18 +1,6 @@
 const DIMENSIONS = 9;
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const numbersHash = {
-  1: true,
-  2: true,
-  3: true,
-  4: true,
-  5: true,
-  6: true,
-  7: true,
-  8: true,
-  9: true,
-};
+
 const SUB_BOX_DIMENSION = 3;
-const hashSubBox = {};
 
 const checkValidity = (board) => {
   const hashRows = {};
@@ -119,11 +107,13 @@ const findNextDot = (matrix) => {
 
   return { i: "null", j: "null" };
 };
+/**
+ * It will retun the sudoku solution as an array
+ */
 const sudokuSolver = (board) => {
   let solution = [];
   const sudokuSolverHelper = (board) => {
     let solvedMatrix = board.map((ar) => ar.map((item) => item));
-    // let lastSolvedMatrix = matrix.map((ar) => ar.map((item) => item));
 
     const { i, j } = findNextDot(board);
 
@@ -152,7 +142,6 @@ const sudokuSolver = (board) => {
 };
 //! accepted by leetcode
 var solveSudoku = function (board) {
-  // board[0][2] = '3'
   const { i, j } = findNextDot(board);
 
   if (i === "null") {
