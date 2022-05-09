@@ -46,6 +46,7 @@ import swapNodesInList from "./swapNodesInList";
 import twoSum from "./twoSum";
 import validSudoku from "./validSudoku";
 import checkEveryRowColumnContainAllNumbers from "./checkEveryRowColumnContainAllNumbers.js";
+import sudokuSolver from "./sudokuSolver.js";
 
 export {
   sumOfArray,
@@ -96,4 +97,5 @@ export {
   twoSum,
   validSudoku,
   checkEveryRowColumnContainAllNumbers,
+  sudokuSolver,
 };
