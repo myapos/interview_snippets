@@ -17,6 +17,8 @@ const matrix = [
 //   [1, 2, 3],
 //   [1, 2, 3],
 // ];
-const output = utils.sudokuSolver(matrix);
-debugger;
-console.log("output", output);
+// utils.sudokuSolver(matrix);
+// debugger;
+// console.log("matrix", matrix);
+
+utils.combinations(3, 2);

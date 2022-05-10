@@ -47,6 +47,7 @@ import twoSum from "./twoSum";
 import validSudoku from "./validSudoku";
 import checkEveryRowColumnContainAllNumbers from "./checkEveryRowColumnContainAllNumbers.js";
 import sudokuSolver from "./sudokuSolver.js";
+import combinations from "./combinations";
 
 export {
   sumOfArray,
@@ -98,4 +99,5 @@ export {
   validSudoku,
   checkEveryRowColumnContainAllNumbers,
   sudokuSolver,
+  combinations,
 };

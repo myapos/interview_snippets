@@ -140,12 +140,12 @@ const sudokuSolver = (board) => {
   sudokuSolverHelper(board);
   return solution;
 };
+
 //! accepted by leetcode
 var solveSudoku = function (board) {
   const { i, j } = findNextDot(board);
 
   if (i === "null") {
-    solution = board;
     return true; //! the entire matrix is parsed
   }
 
@@ -154,7 +154,8 @@ var solveSudoku = function (board) {
     //! try guess and validate
     board[i][j] = `${guess}`;
 
-    if (checkValidity(board)) {
+    const isValidGuess = checkValidity(board);
+    if (isValidGuess) {
       if (solveSudoku(board)) {
         return true;
       }
@@ -166,4 +167,4 @@ var solveSudoku = function (board) {
   return false;
 };
 
-export default sudokuSolver;
+export default solveSudoku;
