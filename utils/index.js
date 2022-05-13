@@ -50,6 +50,7 @@ import sudokuSolver from "./sudokuSolver.js";
 import combinations from "./combinations";
 import containerWithMostWater from "./containerWithMostWater";
 import trappingRainWater from "./trappingRainWater";
+import typedOutStrings from "./typedOutStrings";
 
 export {
   sumOfArray,
@@ -104,4 +105,5 @@ export {
   combinations,
   containerWithMostWater,
   trappingRainWater,
+  typedOutStrings,
 };
