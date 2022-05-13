@@ -22,4 +22,7 @@ const matrix = [
 // console.log("matrix", matrix);
 
 // console.log(utils.containerWithMostWater([7, 1, 2, 3, 9]));
-console.log(utils.containerWithMostWater([9, 7, 1, 2, 3]));
+console.log(
+  "trapping water",
+  utils.trappingRainWater([0, 1, 0, 2, 1, 0, 3, 1, 0, 1, 2])
+);
