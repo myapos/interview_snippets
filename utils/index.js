@@ -48,6 +48,7 @@ import validSudoku from "./validSudoku";
 import checkEveryRowColumnContainAllNumbers from "./checkEveryRowColumnContainAllNumbers.js";
 import sudokuSolver from "./sudokuSolver.js";
 import combinations from "./combinations";
+import containerWithMostWater from "./containerWithMostWater";
 
 export {
   sumOfArray,
@@ -100,4 +101,5 @@ export {
   checkEveryRowColumnContainAllNumbers,
   sudokuSolver,
   combinations,
+  containerWithMostWater,
 };

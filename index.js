@@ -21,4 +21,5 @@ const matrix = [
 // debugger;
 // console.log("matrix", matrix);
 
-utils.combinations(3, 2);
+// console.log(utils.containerWithMostWater([7, 1, 2, 3, 9]));
+console.log(utils.containerWithMostWater([9, 7, 1, 2, 3]));
