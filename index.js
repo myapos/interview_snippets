@@ -65,4 +65,21 @@ const matrix = [
 // console.log(utils.omitFourDigit(0));
 // console.log(utils.omitFourDigit(-1));
 
-utils.linkedListReversal();
+const head = {
+  val: 1,
+  next: {
+    val: 2,
+    next: {
+      val: 3,
+      next: {
+        val: 4,
+        next: {
+          val: 5,
+          next: null,
+        },
+      },
+    },
+  },
+};
+
+utils.reverseBetween(head, 2, 4);

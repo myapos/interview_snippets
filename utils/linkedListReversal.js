@@ -53,9 +53,9 @@ const reverseListWithLoop = (node) => {
 
     //! add a node
     if (curNode.next) {
-      const newNode = new utils.List.Node(curNode.next.data, null);
-      newNode.next = reversedList;
-      reversedList = newNode;
+      const nextNode = new utils.List.Node(curNode.next.data, null);
+      nextNode.next = reversedList;
+      reversedList = nextNode;
     }
 
     curNode = curNode.next;

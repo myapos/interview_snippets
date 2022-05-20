@@ -54,6 +54,7 @@ import typedOutStrings from "./typedOutStrings";
 import longestSubStrWithoutRepeatingChars from "./longestSubStrWithoutRepeatingChars";
 import almostAPalindrome from "./almostAPalindrome";
 import omitFourDigit from "./omitFourDigit";
+import reverseBetween from "./reverseBetween";
 
 export {
   sumOfArray,
@@ -112,4 +113,5 @@ export {
   longestSubStrWithoutRepeatingChars,
   almostAPalindrome,
   omitFourDigit,
+  reverseBetween,
 };
