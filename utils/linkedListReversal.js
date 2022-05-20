@@ -42,14 +42,37 @@ const reverseList = (node) => {
   return p;
 };
 
+// 1->2->3->4->5
+// null <- 1 <- 2 <-3 <-4 <- 5
+const reverseListWithLoop = (node) => {
+  let curNode = node;
+  let reversedList = new utils.List.Node(curNode.data, null);
+
+  while (curNode) {
+    console.log("data", curNode.data);
+
+    //! add a node
+    if (curNode.next) {
+      const newNode = new utils.List.Node(curNode.next.data, null);
+      newNode.next = reversedList;
+      reversedList = newNode;
+    }
+
+    curNode = curNode.next;
+  }
+  return reversedList;
+};
+
 const linkedListReversal = () => {
   const list = buildLinkedList();
   const collect = utils.printListWithRecursionPure(list.head);
   console.log("collect", collect);
 
+  const revWithLoop = reverseListWithLoop(list.head);
   const rev = reverseList(list.head);
 
   console.log("list", JSON.stringify(rev));
+  console.log("reversed list with loop", JSON.stringify(revWithLoop));
   //   const collectRev = printListWithRecursionPure(list.head);
   //   console.log("collectRev", collectRev);
 };

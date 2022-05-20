@@ -21,9 +21,48 @@ const matrix = [
 // debugger;
 // console.log("matrix", matrix);
 
-// console.log(utils.containerWithMostWater([7, 1, 2, 3, 9]));
-// console.log("typedOutStrings", utils.typedOutStrings("ab#c", "ad#c"));
-// console.log("typedOutStrings", utils.typedOutStrings("ab#c", "ad#c"));
-// console.log("typedOutStrings", utils.typedOutStrings("ab##", "c#d#"));
-// console.log("typedOutStrings", utils.typedOutStrings("a#c", "b"));
-console.log("typedOutStrings", utils.typedOutStrings("ab##", "c#d#"));
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("")
+// );
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("c")
+// );
+
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("abcabcbb")
+// );
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("bbbbb")
+// );
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("pwwkew")
+// );
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("asjrgapa")
+// );
+// console.log(
+//   "longestSubStrWithoutRepeatingChars",
+//   utils.longestSubStrWithoutRepeatingChars("xxzqi")
+// );
+
+// console.log("almost palindrome:", utils.almostAPalindrome("abccdba"));
+// console.log("almost palindrome:", utils.almostAPalindrome("race a car"));
+// console.log("almost palindrome:", utils.almostAPalindrome("abcdefdba"));
+// console.log("almost palindrome:", utils.almostAPalindrome("cxcaac"));
+// console.log("almost palindrome:", utils.almostAPalindrome("abca"));
+
+// console.log(utils.omitFourDigit(19));
+// console.log(utils.omitFourDigit(5));
+// console.log(utils.omitFourDigit(25));
+// console.log(utils.omitFourDigit(4));
+// console.log(utils.omitFourDigit(15));
+// console.log(utils.omitFourDigit(0));
+// console.log(utils.omitFourDigit(-1));
+
+utils.linkedListReversal();

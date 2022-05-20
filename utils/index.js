@@ -51,6 +51,9 @@ import combinations from "./combinations";
 import containerWithMostWater from "./containerWithMostWater";
 import trappingRainWater from "./trappingRainWater";
 import typedOutStrings from "./typedOutStrings";
+import longestSubStrWithoutRepeatingChars from "./longestSubStrWithoutRepeatingChars";
+import almostAPalindrome from "./almostAPalindrome";
+import omitFourDigit from "./omitFourDigit";
 
 export {
   sumOfArray,
@@ -106,4 +109,7 @@ export {
   containerWithMostWater,
   trappingRainWater,
   typedOutStrings,
+  longestSubStrWithoutRepeatingChars,
+  almostAPalindrome,
+  omitFourDigit,
 };
