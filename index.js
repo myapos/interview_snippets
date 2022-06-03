@@ -65,21 +65,29 @@ const matrix = [
 // console.log(utils.omitFourDigit(0));
 // console.log(utils.omitFourDigit(-1));
 
-const head = {
-  val: 1,
-  next: {
-    val: 2,
-    next: {
-      val: 3,
-      next: {
-        val: 4,
-        next: {
-          val: 5,
-          next: null,
-        },
-      },
-    },
-  },
-};
+// const head = {
+//   val: 1,
+//   next: {
+//     val: 2,
+//     next: {
+//       val: 3,
+//       next: {
+//         val: 4,
+//         next: {
+//           val: 5,
+//           next: null,
+//         },
+//       },
+//     },
+//   },
+// };
 
-utils.reverseBetween(head, 2, 4);
+// utils.reverseBetween(head, 2, 4);
+
+const s = "()";
+
+// const s = "()[]{}";
+// const s = "({}";
+// const s = "(]";
+
+utils.validParentheses(s);
