@@ -57,6 +57,7 @@ import omitFourDigit from "./omitFourDigit";
 import reverseBetween from "./reverseBetween";
 import validParentheses from "./validParentheses";
 import minRemoveToMakeValid from "./minRemoveToMakeValid";
+import MyQueue from "./MyQueue";
 
 export {
   sumOfArray,
@@ -118,4 +119,5 @@ export {
   reverseBetween,
   validParentheses,
   minRemoveToMakeValid,
+  MyQueue,
 };
