@@ -56,6 +56,7 @@ import almostAPalindrome from "./almostAPalindrome";
 import omitFourDigit from "./omitFourDigit";
 import reverseBetween from "./reverseBetween";
 import validParentheses from "./validParentheses";
+import minRemoveToMakeValid from "./minRemoveToMakeValid";
 
 export {
   sumOfArray,
@@ -116,4 +117,5 @@ export {
   omitFourDigit,
   reverseBetween,
   validParentheses,
+  minRemoveToMakeValid,
 };
