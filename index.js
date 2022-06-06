@@ -84,10 +84,11 @@ const matrix = [
 
 // utils.reverseBetween(head, 2, 4);
 
-// const s = "";
+const s = "";
 // const s = "lee";
-const s = "lee(t(c)o)de)";
+// const s = "lee(t(c)o)de)";
 // const s = "a)b(c)d";
+// const s = "a)b)(c)d";
 // const s = "))((";
 
 console.log("ret", utils.minRemoveToMakeValid(s));
