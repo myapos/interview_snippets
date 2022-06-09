@@ -59,6 +59,7 @@ import validParentheses from "./validParentheses";
 import minRemoveToMakeValid from "./minRemoveToMakeValid";
 import MyQueue from "./MyQueue";
 import quickSort from "./quickSort";
+import findKthLargest from "./findKthLargest";
 
 export {
   sumOfArray,
@@ -122,4 +123,5 @@ export {
   minRemoveToMakeValid,
   MyQueue,
   quickSort,
+  findKthLargest,
 };
