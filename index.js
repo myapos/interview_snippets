@@ -92,14 +92,21 @@ const matrix = [
 // const s = "))((";
 
 // console.log("ret", utils.minRemoveToMakeValid(s));
-var obj = new utils.MyQueue();
-obj.push(1);
-obj.push(2);
-obj.push(3);
-obj.push(4);
-obj.push(5);
-var param_1 = obj.pop();
-var param_2 = obj.pop();
-var param_3 = obj.peek();
-var param_4 = obj.empty();
-debugger;
+// var obj = new utils.MyQueue();
+// obj.push(1);
+// obj.push(2);
+// obj.push(3);
+// obj.push(4);
+// obj.push(5);
+// var param_1 = obj.pop();
+// var param_2 = obj.pop();
+// var param_3 = obj.peek();
+// var param_4 = obj.empty();
+
+// const ar = [4, 2, 1, 6, 7, 3];
+// const ar = [2, 1];
+const ar = [2, 1, 3];
+utils.quickSort(ar, 0, ar.length - 1);
+
+console.log("ar", ar);
+// utils.quickSort([2, 1], 0, 1);

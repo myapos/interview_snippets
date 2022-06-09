@@ -58,6 +58,7 @@ import reverseBetween from "./reverseBetween";
 import validParentheses from "./validParentheses";
 import minRemoveToMakeValid from "./minRemoveToMakeValid";
 import MyQueue from "./MyQueue";
+import quickSort from "./quickSort";
 
 export {
   sumOfArray,
@@ -120,4 +121,5 @@ export {
   validParentheses,
   minRemoveToMakeValid,
   MyQueue,
+  quickSort,
 };
