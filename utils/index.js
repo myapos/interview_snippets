@@ -60,6 +60,7 @@ import minRemoveToMakeValid from "./minRemoveToMakeValid";
 import MyQueue from "./MyQueue";
 import quickSort from "./quickSort";
 import findKthLargest from "./findKthLargest";
+import quickSelect from "./quickSelect";
 
 export {
   sumOfArray,
@@ -124,4 +125,5 @@ export {
   MyQueue,
   quickSort,
   findKthLargest,
+  quickSelect,
 };

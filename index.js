@@ -103,7 +103,10 @@ const matrix = [
 // var param_3 = obj.peek();
 // var param_4 = obj.empty();
 
-const ar = [4, 2, 1, 6, 7, 3];
+// const ar = [4, 2, 1, 6, 7, 3];
+const ar = [5, 3, 1, 6, 4, 2];
+
+// [1,2,3,4,6,7]
 // const ar = [2, 1];
 // const ar = [2, 1, 3];
 // utils.quickSort(ar, 0, ar.length - 1);
@@ -111,4 +114,5 @@ const ar = [4, 2, 1, 6, 7, 3];
 // console.log("ar", ar);
 // utils.quickSort([2, 1], 0, 1);
 
-console.log(utils.findKthLargest(ar, 3));
+// console.log(utils.findKthLargest(ar, 3));
+console.log(" selected", utils.quickSelect(ar, 0, ar.length - 1, 4));
