@@ -61,6 +61,9 @@ import MyQueue from "./MyQueue";
 import quickSort from "./quickSort";
 import findKthLargest from "./findKthLargest";
 import quickSelect from "./quickSelect";
+import searchRange from "./searchRange";
+import maxDepth from "./maxDepth";
+import TreeNode from "./TreeNode";
 
 export {
   sumOfArray,
@@ -126,4 +129,7 @@ export {
   quickSort,
   findKthLargest,
   quickSelect,
+  searchRange,
+  maxDepth,
+  TreeNode,
 };
