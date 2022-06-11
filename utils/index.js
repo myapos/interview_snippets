@@ -64,6 +64,8 @@ import quickSelect from "./quickSelect";
 import searchRange from "./searchRange";
 import maxDepth from "./maxDepth";
 import TreeNode from "./TreeNode";
+import breadthFirstSearch from "./breadthFirstSearch";
+import levelOrder from "./levelOrder";
 
 export {
   sumOfArray,
@@ -132,4 +134,6 @@ export {
   searchRange,
   maxDepth,
   TreeNode,
+  breadthFirstSearch,
+  levelOrder,
 };

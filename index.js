@@ -147,4 +147,16 @@ twentyNode.right = sevenNode;
 tree.left = nineNode;
 tree.right = twentyNode;
 
-utils.maxDepth(tree);
+const tree2 = new utils.TreeNode(3, null, null);
+
+const tree3 = new utils.TreeNode(1, null, null);
+const twoNode = new utils.TreeNode(2, null, null);
+const threeNode = new utils.TreeNode(3, null, null);
+const fourNode = new utils.TreeNode(4, null, null);
+const fiveNode = new utils.TreeNode(5, null, null);
+
+tree3.left = twoNode;
+tree3.right = threeNode;
+twoNode.left = fourNode;
+threeNode.right = fiveNode;
+console.log("list", utils.levelOrder(tree3));
