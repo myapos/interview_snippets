@@ -70,6 +70,8 @@ import rightSideView from "./rightSideView";
 import preorderTraversal from "./preorderTraversal";
 import inorderTraversal from "./inorderTraversal";
 import postorderTraversal from "./postorderTraversal";
+import invertTree from "./invertTree";
+import TreeNodeClass from "./TreeNodeClass";
 
 export {
   sumOfArray,
@@ -144,4 +146,6 @@ export {
   preorderTraversal,
   inorderTraversal,
   postorderTraversal,
+  invertTree,
+  TreeNodeClass,
 };

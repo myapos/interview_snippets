@@ -161,10 +161,20 @@ const matrix = [
 // threeNode.right = fiveNode;
 
 const tree4 = new utils.TreeNode(1, null, null);
-const secondNode = new utils.TreeNode(2, null, null);
-const threeNode = new utils.TreeNode(3, null, null);
+// const secondNode = new utils.TreeNode(2, null, null);
+// const threeNode = new utils.TreeNode(3, null, null);
 
-secondNode.left = threeNode;
-tree4.right = secondNode;
+// secondNode.left = threeNode;
+// tree4.right = secondNode;
 
-console.log("list", utils.postorderTraversal(tree4));
+// const tree = new utils.TreeNodeClass(7);
+// tree.insert([4, 2, 7, 1, 3, 6, 9]);
+
+// const tree = new utils.TreeNodeClass();
+// tree.insert([0]);
+
+const tree = new utils.TreeNodeClass(1);
+tree.insert([2]);
+
+console.log("tree", tree);
+console.log("inverted", utils.invertTree(tree));
