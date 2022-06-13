@@ -3,78 +3,6 @@ import * as utils from "./";
 const isLeaf = (node) =>
   typeof node.val !== "undefined" && !node.left && !node.right;
 
-const validNode = (node) => {
-  if (isLeaf(node)) {
-    return true;
-  }
-
-  let isValidNode = true;
-
-  const hasLeftSubTree = node.left;
-  const hasRightSubTree = node.right;
-
-  if (hasLeftSubTree && !hasRightSubTree) {
-    isValidNode = node.val > node.left?.val;
-  }
-
-  if (hasRightSubTree && !hasLeftSubTree) {
-    isValidNode = node.val < node.right?.val;
-  }
-
-  if (hasRightSubTree && hasLeftSubTree) {
-    isValidNode = node.val > node.left?.val && node.val < node.right?.val;
-  }
-
-  return isValidNode;
-};
-
-const breadthFirstSearch = (tree, hash) => {
-  const list = [];
-  const queue = [];
-
-  queue.push(tree);
-
-  while (queue.length > 0) {
-    const curNode = queue.shift();
-
-    list.push(curNode);
-
-    //! collisions checks
-    const isAlreadyInHash = typeof hash[curNode.val] !== "undefined";
-
-    if (!isAlreadyInHash) {
-      hash[curNode.val] = curNode.val;
-    } else {
-      return false;
-    }
-
-    if (curNode.left) {
-      queue.push(curNode.left);
-    }
-
-    if (curNode.right) {
-      queue.push(curNode.right);
-    }
-
-    // check all nodes in queue for validity
-    for (let i = 0; i < list.length; i++) {
-      const isValidBSNode = validNode(list[i]);
-
-      if (!isValidBSNode) {
-        return false;
-      }
-    }
-
-    const curNodeIsValid = validNode(curNode);
-
-    if (!curNodeIsValid) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
 const dfs = (root, list) => {
   if (!root) {
     return;
@@ -86,32 +14,6 @@ const dfs = (root, list) => {
   dfs(root.right, list);
 
   return list;
-};
-
-const validateNodes = (node, direction) => {
-  if (!node) {
-    return node;
-  }
-
-  const left = validateNodes(node.left, "left");
-
-  const right = validateNodes(node.right, "right");
-
-  const nodeIsValid = validNode(node);
-
-  console.log(
-    "left",
-    left,
-    " right",
-    right,
-    " node",
-    node,
-    direction,
-    "nodeIsValid",
-    nodeIsValid
-  );
-
-  return node;
 };
 
 const arrayIsSorted = (ar) => {
