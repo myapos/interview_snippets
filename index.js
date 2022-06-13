@@ -167,4 +167,4 @@ const threeNode = new utils.TreeNode(3, null, null);
 secondNode.left = threeNode;
 tree4.right = secondNode;
 
-console.log("list", utils.preorderTraversal(tree4));
+console.log("list", utils.postorderTraversal(tree4));

@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/binary-tree-preorder-traversal/
+// https://leetcode.com/problems/binary-tree-postorder-traversal/
 
 /**
  * Definition for a binary tree node.
@@ -17,20 +17,19 @@ var depthFirstSearch = function (root, list) {
     return;
   }
 
-  list.push(root.val);
-
   depthFirstSearch(root.left, list);
   depthFirstSearch(root.right, list);
+  list.push(root.val);
 
   return list;
 };
 
-// preorder  --> root - left - right
-const preorderTraversal = (root) => {
+// inorder --> left-root - right
+const postorderTraversal = (root) => {
   if (!root) {
     return [];
   }
   return depthFirstSearch(root, []);
 };
 
-export default preorderTraversal;
+export default postorderTraversal;

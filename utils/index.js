@@ -68,6 +68,8 @@ import breadthFirstSearch from "./breadthFirstSearch";
 import levelOrder from "./levelOrder";
 import rightSideView from "./rightSideView";
 import preorderTraversal from "./preorderTraversal";
+import inorderTraversal from "./inorderTraversal";
+import postorderTraversal from "./postorderTraversal";
 
 export {
   sumOfArray,
@@ -140,4 +142,6 @@ export {
   levelOrder,
   rightSideView,
   preorderTraversal,
+  inorderTraversal,
+  postorderTraversal,
 };
