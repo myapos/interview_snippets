@@ -66,6 +66,8 @@ import maxDepth from "./maxDepth";
 import TreeNode from "./TreeNode";
 import breadthFirstSearch from "./breadthFirstSearch";
 import levelOrder from "./levelOrder";
+import rightSideView from "./rightSideView";
+import preorderTraversal from "./preorderTraversal";
 
 export {
   sumOfArray,
@@ -136,4 +138,6 @@ export {
   TreeNode,
   breadthFirstSearch,
   levelOrder,
+  rightSideView,
+  preorderTraversal,
 };

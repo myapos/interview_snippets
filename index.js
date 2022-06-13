@@ -136,27 +136,35 @@ const matrix = [
 
 // console.log("range", utils.searchRange(nums, target));
 
-const tree = new utils.TreeNode(3, null, null);
-const nineNode = new utils.TreeNode(9, null, null);
-const twentyNode = new utils.TreeNode(20, null, null);
-const fifteenNode = new utils.TreeNode(15, null, null);
-const sevenNode = new utils.TreeNode(7, null, null);
-twentyNode.left = fifteenNode;
-twentyNode.right = sevenNode;
+// const tree = new utils.TreeNode(3, null, null);
+// const nineNode = new utils.TreeNode(9, null, null);
+// const twentyNode = new utils.TreeNode(20, null, null);
+// const fifteenNode = new utils.TreeNode(15, null, null);
+// const sevenNode = new utils.TreeNode(7, null, null);
+// twentyNode.left = fifteenNode;
+// twentyNode.right = sevenNode;
 
-tree.left = nineNode;
-tree.right = twentyNode;
+// tree.left = nineNode;
+// tree.right = twentyNode;
 
-const tree2 = new utils.TreeNode(3, null, null);
+// const tree2 = new utils.TreeNode(3, null, null);
 
-const tree3 = new utils.TreeNode(1, null, null);
-const twoNode = new utils.TreeNode(2, null, null);
+// const tree3 = new utils.TreeNode(1, null, null);
+// const twoNode = new utils.TreeNode(2, null, null);
+// const threeNode = new utils.TreeNode(3, null, null);
+// const fourNode = new utils.TreeNode(4, null, null);
+// const fiveNode = new utils.TreeNode(5, null, null);
+
+// tree3.left = twoNode;
+// tree3.right = threeNode;
+// twoNode.left = fourNode;
+// threeNode.right = fiveNode;
+
+const tree4 = new utils.TreeNode(1, null, null);
+const secondNode = new utils.TreeNode(2, null, null);
 const threeNode = new utils.TreeNode(3, null, null);
-const fourNode = new utils.TreeNode(4, null, null);
-const fiveNode = new utils.TreeNode(5, null, null);
 
-tree3.left = twoNode;
-tree3.right = threeNode;
-twoNode.left = fourNode;
-threeNode.right = fiveNode;
-console.log("list", utils.levelOrder(tree3));
+secondNode.left = threeNode;
+tree4.right = secondNode;
+
+console.log("list", utils.preorderTraversal(tree4));
