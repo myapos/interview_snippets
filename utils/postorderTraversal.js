@@ -24,7 +24,7 @@ var depthFirstSearch = function (root, list) {
   return list;
 };
 
-// inorder --> left-root - right
+// inorder --> left-right-root
 const postorderTraversal = (root) => {
   if (!root) {
     return [];

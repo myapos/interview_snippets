@@ -18,7 +18,6 @@ const matrix = [
 //   [1, 2, 3],
 // ];
 // utils.sudokuSolver(matrix);
-// debugger;
 // console.log("matrix", matrix);
 
 // console.log(
@@ -170,11 +169,35 @@ const tree4 = new utils.TreeNode(1, null, null);
 // const tree = new utils.TreeNodeClass(7);
 // tree.insert([4, 2, 7, 1, 3, 6, 9]);
 
+// const tree = new utils.TreeNodeClass(2);
+// tree.insert([1, 3]);
 // const tree = new utils.TreeNodeClass();
 // tree.insert([0]);
 
-const tree = new utils.TreeNodeClass(1);
-tree.insert([2]);
+// const tree = new utils.TreeNodeClass(1);
+// tree.insert([2]);
 
-console.log("tree", tree);
-console.log("inverted", utils.invertTree(tree));
+// const tree = new utils.TreeNodeClass(5);
+// tree.insert([1, 4, null, null, 3, 6]);
+
+// const tree = new utils.TreeNodeClass(1);
+// tree.insert([4, 3, 6, 4]);
+
+// const tree = new utils.TreeNodeClass(5);
+// tree.insert([1, 4, null, null, 3, 6]);
+
+// const tree = new utils.TreeNodeClass(10);
+// tree.insert([3, 12, 1, 4]);
+
+// const tree = new utils.TreeNodeClass(0);
+// tree.insert([1, 4, null, null, 3, 6]);
+
+// const tree = new utils.TreeNodeClass(0);
+// tree.insert([-1]);
+
+const tree = new utils.TreeNodeClass(0);
+tree.insert([null, -1]);
+
+console.log("tree", JSON.stringify(tree));
+console.log("preorder", utils.preorderTraversal(tree));
+console.log(utils.isValidBST(tree));
