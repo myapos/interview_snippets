@@ -202,11 +202,30 @@ const matrix = [
 // console.log("preorder", utils.preorderTraversal(tree));
 // console.log(utils.isValidBST(tree));
 
-const grid = [
-  ["1", "1", "1", "1", "0"],
-  ["1", "1", "0", "1", "0"],
-  ["1", "1", "0", "0", "0"],
-  ["0", "0", "0", "0", "0"],
-];
+// const grid = [
+//   [2, 1, 1],
+//   [1, 1, 0],
+//   [0, 1, 1],
+// ];
 
-console.log(utils.numIslands(grid));
+// const grid = [
+//   [2, 1],
+//   [1, 1],
+// ];
+
+// const grid = [
+//   [2, 0, 1, 0, 0],
+//   [1, 1, 0, 0, 2],
+//   [0, 1, 1, 1, 1],
+//   [0, 1, 0, 0, 1],
+// ];
+
+// const grid = [[]];
+// const grid = [[1]];
+// const grid = [[2]];
+// const grid = [[2, 1]];
+const grid = [[0]];
+
+// const grid = [[0, 2]];
+
+console.log(utils.orangesRotting(grid));

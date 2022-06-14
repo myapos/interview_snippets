@@ -74,6 +74,7 @@ import invertTree from "./invertTree";
 import TreeNodeClass from "./TreeNodeClass";
 import isValidBST from "./isValidBST";
 import numIslands from "./numIslands";
+import orangesRotting from "./orangesRotting";
 
 export {
   sumOfArray,
@@ -152,4 +153,5 @@ export {
   TreeNodeClass,
   isValidBST,
   numIslands,
+  orangesRotting,
 };
