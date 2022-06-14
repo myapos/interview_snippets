@@ -159,7 +159,7 @@ const matrix = [
 // twoNode.left = fourNode;
 // threeNode.right = fiveNode;
 
-const tree4 = new utils.TreeNode(1, null, null);
+// const tree4 = new utils.TreeNode(1, null, null);
 // const secondNode = new utils.TreeNode(2, null, null);
 // const threeNode = new utils.TreeNode(3, null, null);
 
@@ -195,9 +195,18 @@ const tree4 = new utils.TreeNode(1, null, null);
 // const tree = new utils.TreeNodeClass(0);
 // tree.insert([-1]);
 
-const tree = new utils.TreeNodeClass(0);
-tree.insert([null, -1]);
+// const tree = new utils.TreeNodeClass(0);
+// tree.insert([null, -1]);
 
-console.log("tree", JSON.stringify(tree));
-console.log("preorder", utils.preorderTraversal(tree));
-console.log(utils.isValidBST(tree));
+// console.log("tree", JSON.stringify(tree));
+// console.log("preorder", utils.preorderTraversal(tree));
+// console.log(utils.isValidBST(tree));
+
+const grid = [
+  ["1", "1", "1", "1", "0"],
+  ["1", "1", "0", "1", "0"],
+  ["1", "1", "0", "0", "0"],
+  ["0", "0", "0", "0", "0"],
+];
+
+console.log(utils.numIslands(grid));

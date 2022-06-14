@@ -73,6 +73,7 @@ import postorderTraversal from "./postorderTraversal";
 import invertTree from "./invertTree";
 import TreeNodeClass from "./TreeNodeClass";
 import isValidBST from "./isValidBST";
+import numIslands from "./numIslands";
 
 export {
   sumOfArray,
@@ -150,4 +151,5 @@ export {
   invertTree,
   TreeNodeClass,
   isValidBST,
+  numIslands,
 };
