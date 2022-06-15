@@ -1,0 +1,580 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20220615.111257.327187.0.001.json",
+    "dumpEventTime": "2022-06-15T11:12:57Z",
+    "dumpEventTimeStamp": "1655280777354",
+    "processId": 327187,
+    "threadId": null,
+    "cwd": "/home/myros/projects/interview_preparation_algorithms",
+    "commandLine": [
+      "/home/myros/.nvm/versions/node/v12.16.3/bin/node",
+      "/home/myros/projects/interview_preparation_algorithms/node_modules/@babel/node/lib/_babel-node",
+      "index.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "glibcVersionRuntime": "2.31",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.13.0-48-generic",
+    "osVersion": "#54~20.04.1-Ubuntu SMP Thu Jun 2 23:37:17 UTC 2022",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 4100,
+        "user": 69790800,
+        "nice": 27800,
+        "sys": 13220500,
+        "idle": 831513200,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 2800,
+        "user": 66365900,
+        "nice": 26600,
+        "sys": 13129800,
+        "idle": 834881200,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 4060,
+        "user": 64865400,
+        "nice": 14100,
+        "sys": 13347200,
+        "idle": 834641300,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 4100,
+        "user": 67616100,
+        "nice": 8900,
+        "sys": 25214600,
+        "idle": 817993800,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 4100,
+        "user": 59994300,
+        "nice": 36100,
+        "sys": 13633000,
+        "idle": 839162000,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 2800,
+        "user": 64470200,
+        "nice": 37000,
+        "sys": 13425500,
+        "idle": 836516600,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 2800,
+        "user": 66101000,
+        "nice": 23800,
+        "sys": 13325200,
+        "idle": 834930900,
+        "irq": 0
+      },
+      {
+        "model": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+        "speed": 2800,
+        "user": 67890800,
+        "nice": 51100,
+        "sys": 13395800,
+        "idle": 832528400,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp4s0",
+        "internal": false,
+        "mac": "38:f3:ab:95:e1:22",
+        "address": "192.168.1.161",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp4s0",
+        "internal": false,
+        "mac": "38:f3:ab:95:e1:22",
+        "address": "fe80::24e7:67b9:4f46:ae32",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "myros-ThinkPad-E15-Gen-2"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b46955",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a09c8f",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7d71e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7da99",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d2a1f5",
+      "symbol": " [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d02310",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::AllocationType) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000e71561",
+      "symbol": " [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000000e71810",
+      "symbol": " [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x000000000101985b",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x00000000013c5b79",
+      "symbol": " [/home/myros/.nvm/versions/node/v12.16.3/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 5455806464,
+    "totalCommittedMemory": 5454716888,
+    "usedMemory": 5416230904,
+    "availableMemory": 969054640,
+    "memoryLimit": 8640266240,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33447696,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      },
+      "old_space": {
+        "memorySize": 3831898112,
+        "committedMemory": 3831548336,
+        "capacity": 3827355552,
+        "used": 3827210496,
+        "available": 145056
+      },
+      "code_space": {
+        "memorySize": 954368,
+        "committedMemory": 555040,
+        "capacity": 522880,
+        "used": 484896,
+        "available": 37984
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1572280,
+        "capacity": 1574872,
+        "used": 1007440,
+        "available": 567432
+      },
+      "large_object_space": {
+        "memorySize": 1587511296,
+        "committedMemory": 1587511296,
+        "capacity": 1587492480,
+        "used": 1587492480,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 951544872,
+        "used": 0,
+        "available": 951544872
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 14.9275,
+    "kernelCpuSeconds": 1.75594,
+    "cpuConsumptionPercent": 166.834,
+    "maxRss": 6803431424,
+    "pageFaults": {
+      "IORequired": 102,
+      "IONotRequired": 1811479
+    },
+    "fsActivity": {
+      "reads": 19904,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 5.05513,
+    "kernelCpuSeconds": 1.52857,
+    "cpuConsumptionPercent": 65.837,
+    "fsActivity": {
+      "reads": 19920,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "myros",
+    "LC_TIME": "el_GR.UTF-8",
+    "npm_config_user_agent": "npm/6.14.4 node/v12.16.3 linux x64",
+    "npm_config_always_auth": "",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "SSH_AGENT_PID": "2282",
+    "XDG_SESSION_TYPE": "x11",
+    "GIT_ASKPASS": "/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "npm_package_devDependencies_nodemon": "^2.0.15",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "1000",
+    "npm_node_execpath": "/home/myros/.nvm/versions/node/v12.16.3/bin/node",
+    "SHLVL": "1",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/myros",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "npm_config_force": "",
+    "TERM_PROGRAM_VERSION": "1.68.0",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/myros/.nvm/versions/node/v12.16.3/bin",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "NVM_INC": "/home/myros/.nvm/versions/node/v12.16.3/include/node",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "NODE_OPTIONS": "--require /usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js --inspect-publish-uid=http",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "GTK_MODULES": "gail:atk-bridge",
+    "VSCODE_GIT_ASKPASS_MAIN": "/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "LC_MONETARY": "el_GR.UTF-8",
+    "VSCODE_GIT_ASKPASS_NODE": "/usr/share/code/code",
+    "MANAGERPID": "2095",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/myros/.npmrc",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "COLORTERM": "truecolor",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "12897",
+    "npm_package_description": "",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "NVM_DIR": "/home/myros/.nvm",
+    "npm_package_devDependencies__babel_preset_env": "^7.16.11",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "IM_CONFIG_PHASE": "1",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "myros",
+    "npm_package_devDependencies__babel_node": "^7.16.8",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/bash",
+    "JOURNAL_STREAM": "8:53066",
+    "_": "/home/myros/.nvm/versions/node/v12.16.3/bin/npm",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/home/myros/.nvm/versions/node/v12.16.3",
+    "XDG_SESSION_CLASS": "user",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "USERNAME": "myros",
+    "TERM": "xterm-256color",
+    "npm_package_devDependencies__babel_core": "^7.17.9",
+    "npm_config_cache": "/home/myros/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "nodemon --exec babel-node index.js ",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "WINDOWPATH": "2",
+    "npm_config_timeout": "100000",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/home/myros/.nvm/versions/node/v12.16.3/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/home/myros/projects/interview_preparation_algorithms/node_modules/.bin:/home/myros/.nvm/versions/node/v12.16.3/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/myros/projects/interview_preparation_algorithms/node_modules/.bin:/home/myros/.local/bin:/home/myros/.nvm/versions/node/v12.16.3/bin:/home/myros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin",
+    "SESSION_MANAGER": "local/myros-ThinkPad-E15-Gen-2:@/tmp/.ICE-unix/2329,unix/myros-ThinkPad-E15-Gen-2:/tmp/.ICE-unix/2329",
+    "INVOCATION_ID": "2d44159b59aa4515981d471129f07640",
+    "npm_package_name": "magic_squares",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/home/myros/.nvm/versions/node/v12.16.3/bin/node",
+    "XDG_MENU_PREFIX": "gnome-",
+    "LC_ADDRESS": "el_GR.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "GDK_BACKEND": "x11",
+    "npm_package_devDependencies__babel_cli": "^7.17.6",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "LC_TELEPHONE": "el_GR.UTF-8",
+    "npm_config_umask": "0002",
+    "XMODIFIERS": "@im=ibus",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "VSCODE_GIT_IPC_HANDLE": "/run/user/1000/vscode-git-79f5426b4c.sock",
+    "TERM_PROGRAM": "vscode",
+    "npm_package_main": "index.js",
+    "npm_package_gitHead": "ba3f9804a163f0f228bb0a920218c126be876549",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "nodemon --exec babel-node index.js ",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "npm_package_scripts_test": "echo \"Error: no test specified\" && exit 1",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "SHELL": "/bin/bash",
+    "LC_NAME": "el_GR.UTF-8",
+    "npm_package_version": "1.0.0",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "start",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"run\",\"start\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "npm_package_author": "",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "12.16.3",
+    "npm_config_tag": "latest",
+    "LC_MEASUREMENT": "el_GR.UTF-8",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "LC_IDENTIFICATION": "el_GR.UTF-8",
+    "npm_package_license": "ISC",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "VSCODE_INSPECTOR_OPTIONS": "{\"inspectorIpc\":\"/tmp/node-cdp.13192-7.sock\",\"deferredMode\":false,\"waitForDebugger\":\"\",\"execPath\":\"/home/myros/.nvm/versions/node/v12.16.3/bin/node\",\"onlyEntrypoint\":false,\"autoAttachMode\":\"always\",\"openerId\":\"73fa9205d69ff48209a88f15\"}",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "QT_IM_MODULE": "ibus",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/home/myros/.nvm/versions/node/v12.16.3/etc/npmrc",
+    "npm_config_init_module": "/home/myros/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/myros/projects/interview_preparation_algorithms",
+    "npm_config_globalignorefile": "/home/myros/.nvm/versions/node/v12.16.3/etc/npmignore",
+    "npm_execpath": "/home/myros/.nvm/versions/node/v12.16.3/lib/node_modules/npm/bin/npm-cli.js",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "NVM_CD_FLAGS": "",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "LC_NUMERIC": "el_GR.UTF-8",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "LC_PAPER": "el_GR.UTF-8",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "npm_package_scripts_exec": "babel-node index.js ",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/myros/projects/interview_preparation_algorithms"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 62530,
+      "hard": 62530
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}

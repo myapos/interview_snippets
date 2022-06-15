@@ -76,6 +76,7 @@ import isValidBST from "./isValidBST";
 import numIslands from "./numIslands";
 import orangesRotting from "./orangesRotting";
 import wallsAndGates from "./wallsAndGates";
+import transpose from "./transpose";
 
 export {
   sumOfArray,
@@ -156,4 +157,5 @@ export {
   numIslands,
   orangesRotting,
   wallsAndGates,
+  transpose,
 };
