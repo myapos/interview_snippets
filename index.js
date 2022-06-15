@@ -272,11 +272,11 @@ const INF = 2147483647;
 
 // console.log(utils.wallsAndGates(grid));
 
-const matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
 
 // const matrix = [
 //   [1, 2, 3, 7, 9],
@@ -285,7 +285,14 @@ const matrix = [
 
 // const matrix = [[3, 7, 8]];
 // const matrix = [[5], [8]];
-console.log(utils.transpose(matrix));
+const matrix = [
+    [1, 3, 5, 7],
+    [10, 11, 16, 20],
+    [23, 30, 34, 60],
+  ],
+  target = 3;
+
+console.log(utils.searchMatrix(matrix, target));
 /* 
 [ 
   [ 2, -1, 0, 0 ], 

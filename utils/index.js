@@ -77,6 +77,7 @@ import numIslands from "./numIslands";
 import orangesRotting from "./orangesRotting";
 import wallsAndGates from "./wallsAndGates";
 import transpose from "./transpose";
+import searchMatrix from "./searchMatrix";
 
 export {
   sumOfArray,
@@ -158,4 +159,5 @@ export {
   orangesRotting,
   wallsAndGates,
   transpose,
+  searchMatrix,
 };
