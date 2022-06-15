@@ -224,8 +224,37 @@ const matrix = [
 // const grid = [[1]];
 // const grid = [[2]];
 // const grid = [[2, 1]];
-const grid = [[0]];
+// const grid = [[0]];
 
 // const grid = [[0, 2]];
 
-console.log(utils.orangesRotting(grid));
+// console.log(utils.orangesRotting(grid));
+
+const INF = 2147483647;
+
+// const grid = [
+//   [INF, -1, 0, INF],
+//   [-1, INF, INF, -1],
+//   [INF, -1, INF, -1],
+//   [0, -1, INF, INF],
+// ];
+
+// const grid = [
+//   [INF, -1, 0, INF],
+//   [INF, INF, INF, -1],
+//   [INF, -1, INF, -1],
+//   [0, -1, INF, INF],
+// ];
+
+// const grid = [];
+// const grid = [[0]];
+const grid = [[-1]];
+console.log(utils.wallsAndGates(grid));
+/* 
+[ 
+  [ 2, -1, 0, 0 ], 
+  [ 1, 1, 0, 0 ], 
+  [ 0, -1, 1, -1 ], 
+  [ 0, -1, 2, 3 ] ]
+
+*/

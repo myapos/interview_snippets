@@ -75,6 +75,7 @@ import TreeNodeClass from "./TreeNodeClass";
 import isValidBST from "./isValidBST";
 import numIslands from "./numIslands";
 import orangesRotting from "./orangesRotting";
+import wallsAndGates from "./wallsAndGates";
 
 export {
   sumOfArray,
@@ -154,4 +155,5 @@ export {
   isValidBST,
   numIslands,
   orangesRotting,
+  wallsAndGates,
 };
