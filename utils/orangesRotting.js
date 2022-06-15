@@ -58,7 +58,6 @@ const orangesRotting = (grid) => {
   let { rottenOranges, numOfFreshOranges, emptyCells } =
     findRottenOranges(grid);
 
-  debugger;
   if (emptyCells === grid.length * grid[0].length) {
     return 0; //! all the cells are empty
   }
