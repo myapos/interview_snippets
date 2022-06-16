@@ -285,14 +285,20 @@ const INF = 2147483647;
 
 // const matrix = [[3, 7, 8]];
 // const matrix = [[5], [8]];
-const matrix = [
-    [1, 3, 5, 7],
-    [10, 11, 16, 20],
-    [23, 30, 34, 60],
-  ],
-  target = 3;
+// const matrix = [
+//   [1, 1, 1],
+//   [1, 0, 1],
+//   [1, 1, 1],
+// ];
 
-console.log(utils.searchMatrix(matrix, target));
+const matrix = [
+  [0, 1, 2, 3, 0],
+  [3, 4, 5, 2, 6],
+  [1, 3, 1, 5, 5],
+  [1, 3, 1, 5, 5],
+];
+
+console.log(utils.setZeroes(matrix));
 /* 
 [ 
   [ 2, -1, 0, 0 ], 
