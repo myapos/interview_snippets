@@ -79,6 +79,7 @@ import wallsAndGates from "./wallsAndGates";
 import transpose from "./transpose";
 import searchMatrix from "./searchMatrix";
 import setZeroes from "./setZeroes";
+import numOfMinutes from "./numOfMinutes";
 
 export {
   sumOfArray,
@@ -162,4 +163,5 @@ export {
   transpose,
   searchMatrix,
   setZeroes,
+  numOfMinutes,
 };
