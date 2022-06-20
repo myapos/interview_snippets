@@ -80,8 +80,10 @@ import transpose from "./transpose";
 import searchMatrix from "./searchMatrix";
 import setZeroes from "./setZeroes";
 import numOfMinutes from "./numOfMinutes";
+import maxHeap from "./maxHeap";
 
 export {
+  maxHeap,
   sumOfArray,
   isMagicSquare,
   checkIfSquareAlreadyExists,

@@ -230,7 +230,7 @@ import * as utils from "./utils";
 
 // console.log(utils.orangesRotting(grid));
 
-const INF = 2147483647;
+// const INF = 2147483647;
 
 // const grid = [
 //   [INF, -1, 0, INF],
@@ -291,14 +291,55 @@ const INF = 2147483647;
 //   [1, 1, 1],
 // ];
 
-const matrix = [
-  [0, 1, 2, 3, 0],
-  [3, 4, 5, 2, 6],
-  [1, 3, 1, 5, 5],
-  [1, 3, 1, 5, 5],
-];
+// const matrix = [
+//   [0, 1, 2, 3, 0],
+//   [3, 4, 5, 2, 6],
+//   [1, 3, 1, 5, 5],
+//   [1, 3, 1, 5, 5],
+// ];
 
-console.log(utils.setZeroes(matrix));
+// console.log(utils.setZeroes(matrix));
+
+const maxHeap = new utils.maxHeap();
+maxHeap.insert(30);
+maxHeap.insert(50);
+maxHeap.insert(40);
+maxHeap.insert(20);
+maxHeap.insert(15);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(50);
+maxHeap.insert(12);
+maxHeap.insert(7);
+maxHeap.insert(40);
+maxHeap.insert(22);
+console.log(maxHeap);
+
+maxHeap.delete();
+maxHeap.delete();
+maxHeap.delete();
+maxHeap.delete();
+maxHeap.delete();
+maxHeap.delete();
+maxHeap.delete();
+
+maxHeap.insert(30);
+maxHeap.insert(20);
+maxHeap.insert(5);
+maxHeap.insert(80);
+
+console.log("prin", maxHeap);
+
+maxHeap.delete();
+maxHeap.delete();
+
+console.log("meta", maxHeap);
+
 /* 
 [ 
   [ 2, -1, 0, 0 ], 
