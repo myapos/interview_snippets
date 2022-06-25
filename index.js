@@ -349,9 +349,10 @@ import * as utils from "./utils";
 
 */
 
-console.log(utils.heapSort([2, 5, 1, 3, 4], (a, b) => a > b));
-console.log(utils.heapSort([2, 2, 5, 1, 3, 4], (a, b) => a > b));
-console.log(utils.heapSort([2, 5, 1, 3, 2, 4], (a, b) => a > b));
+// console.log(utils.heapSort([2, 5, 1, 3, 4], (a, b) => a > b));
+// console.log(utils.heapSort([7, 6, 4, 5, 3, 2, 1], (a, b) => a > b));
+// console.log(utils.heapSort([2, 2, 5, 1, 3, 4], (a, b) => a > b));
+// console.log(utils.heapSort([2, 5, 1, 3, 2, 4], (a, b) => a > b));
 
 // console.log(utils.heapSort([0], (a, b) => a > b));
 
@@ -359,6 +360,8 @@ console.log(utils.heapSort([2, 5, 1, 3, 2, 4], (a, b) => a > b));
 // console.log(utils.heapSort([1, 2, 3, 4, 5]));
 
 // console.log(utils.heapSort([3, 2, 8, 10, 1]));
-console.log(
-  utils.heapSort([-7, 0, -1, 4, -4, -5, -1, 0, 7, 9], (a, b) => a > b)
-);
+// console.log(
+//   utils.heapSort([-7, 0, -1, 4, -4, -5, -1, 0, 7, 9], (a, b) => a > b)
+// );
+
+console.log(utils.heapSort([5, 1, 1, 2, 0, 0]));
