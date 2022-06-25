@@ -81,8 +81,10 @@ import searchMatrix from "./searchMatrix";
 import setZeroes from "./setZeroes";
 import numOfMinutes from "./numOfMinutes";
 import maxHeap from "./maxHeap";
+import heapSort from "./heapSort";
 
 export {
+  heapSort,
   maxHeap,
   sumOfArray,
   isMagicSquare,

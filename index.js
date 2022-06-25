@@ -300,45 +300,45 @@ import * as utils from "./utils";
 
 // console.log(utils.setZeroes(matrix));
 
-const maxHeap = new utils.maxHeap();
-maxHeap.insert(30);
-maxHeap.insert(50);
-maxHeap.insert(40);
-maxHeap.insert(20);
-maxHeap.insert(15);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(50);
-maxHeap.insert(12);
-maxHeap.insert(7);
-maxHeap.insert(40);
-maxHeap.insert(22);
-console.log(maxHeap);
+// const maxHeap = new utils.maxHeap();
+// maxHeap.insert(30);
+// maxHeap.insert(50);
+// maxHeap.insert(40);
+// maxHeap.insert(20);
+// maxHeap.insert(15);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(50);
+// maxHeap.insert(12);
+// maxHeap.insert(7);
+// maxHeap.insert(40);
+// maxHeap.insert(22);
+// console.log(maxHeap);
 
-maxHeap.delete();
-maxHeap.delete();
-maxHeap.delete();
-maxHeap.delete();
-maxHeap.delete();
-maxHeap.delete();
-maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
 
-maxHeap.insert(30);
-maxHeap.insert(20);
-maxHeap.insert(5);
-maxHeap.insert(80);
+// maxHeap.insert(30);
+// maxHeap.insert(20);
+// maxHeap.insert(5);
+// maxHeap.insert(80);
 
-console.log("prin", maxHeap);
+// console.log("prin", maxHeap);
 
-maxHeap.delete();
-maxHeap.delete();
+// maxHeap.delete();
+// maxHeap.delete();
 
-console.log("meta", maxHeap);
+// console.log("meta", maxHeap);
 
 /* 
 [ 
@@ -348,3 +348,17 @@ console.log("meta", maxHeap);
   [ 0, -1, 2, 3 ] ]
 
 */
+
+console.log(utils.heapSort([2, 5, 1, 3, 4], (a, b) => a > b));
+console.log(utils.heapSort([2, 2, 5, 1, 3, 4], (a, b) => a > b));
+console.log(utils.heapSort([2, 5, 1, 3, 2, 4], (a, b) => a > b));
+
+// console.log(utils.heapSort([0], (a, b) => a > b));
+
+// // console.log(utils.heapSort([5, 1, 2, 3, 4], (a, b) => a > b));
+// console.log(utils.heapSort([1, 2, 3, 4, 5]));
+
+// console.log(utils.heapSort([3, 2, 8, 10, 1]));
+console.log(
+  utils.heapSort([-7, 0, -1, 4, -4, -5, -1, 0, 7, 9], (a, b) => a > b)
+);
