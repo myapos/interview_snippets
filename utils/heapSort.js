@@ -14,30 +14,31 @@ const swap = (ar, i, j) => {
  * function does not return anything.
  **/
 function heapify(ar, currentRootIdx, length) {
-  let largest = currentRootIdx; //! Initialize largest as root node
+  let largestIdx = currentRootIdx; //! Initialize largestIdx as root node
   let leftChildIdx = 2 * currentRootIdx + 1; //! leftChildIdx = 2*currentRootIdx + 1
   let rightChildIdx = 2 * currentRootIdx + 2; //! rightChildIdx = 2*currentRootIdx + 2
 
-  //! If left child is larger than root
-  if (leftChildIdx < length && ar[leftChildIdx] > ar[largest])
-    largest = leftChildIdx;
+  const leftChildIdxIsInRange = leftChildIdx < length;
+  const rightChildIdxIsInRange = rightChildIdx < length;
 
-  //! If right child is larger than largest so far
-  if (rightChildIdx < length && ar[rightChildIdx] > ar[largest])
-    largest = rightChildIdx;
+  //! detect the largest between the left and right child
+  if (leftChildIdxIsInRange && ar[leftChildIdx] > ar[largestIdx])
+    largestIdx = leftChildIdx;
 
-  //! If largest is not root
-  if (largest != currentRootIdx) {
-    swap(ar, currentRootIdx, largest);
+  if (rightChildIdxIsInRange && ar[rightChildIdx] > ar[largestIdx])
+    largestIdx = rightChildIdx;
 
-    //! Recursively heapify the affected sub-tree
-    heapify(ar, largest, length);
+  //! swap if parent is not the largest node between right and left child
+  if (largestIdx != currentRootIdx) {
+    swap(ar, currentRootIdx, largestIdx);
+
+    //! heapify the sub-tree from the largest index to the end recursively
+    heapify(ar, largestIdx, length);
   }
 }
 
 const buildHeap = (ar, length) => {
   let middle = Math.floor(length / 2) - 1;
-  //! Build heap (rearrange array)
   for (let currentRootIdx = middle; currentRootIdx >= 0; currentRootIdx--) {
     heapify(ar, currentRootIdx, length);
   }
@@ -50,6 +51,7 @@ const heapSort = (ar) => {
     return ar;
   }
 
+  //! Build heap (rearrange array)
   buildHeap(ar, length);
 
   //! One by one extract an element from heap
