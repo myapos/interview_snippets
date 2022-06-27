@@ -365,4 +365,9 @@ import * as utils from "./utils";
 // );
 
 // console.log(utils.heapSort([5, 1, 1, 2, 0, 0]));
-console.log(utils.greatestCommonDivisor([3, 3]));
+console.log(
+  utils.greatestCommonDivisorOfStrings(
+    "TAUXXTAUXXTAUXXTAUXXTAUXX",
+    "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"
+  )
+);

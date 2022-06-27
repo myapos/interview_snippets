@@ -83,8 +83,10 @@ import numOfMinutes from "./numOfMinutes";
 import maxHeap from "./maxHeap";
 import heapSort from "./heapSort";
 import greatestCommonDivisor from "./greatestCommonDivisor";
+import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings";
 
 export {
+  greatestCommonDivisorOfStrings,
   greatestCommonDivisor,
   heapSort,
   maxHeap,
