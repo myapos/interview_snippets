@@ -364,4 +364,5 @@ import * as utils from "./utils";
 //   utils.heapSort([-7, 0, -1, 4, -4, -5, -1, 0, 7, 9], (a, b) => a > b)
 // );
 
-console.log(utils.heapSort([5, 1, 1, 2, 0, 0]));
+// console.log(utils.heapSort([5, 1, 1, 2, 0, 0]));
+console.log(utils.greatestCommonDivisor([3, 3]));

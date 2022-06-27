@@ -82,8 +82,10 @@ import setZeroes from "./setZeroes";
 import numOfMinutes from "./numOfMinutes";
 import maxHeap from "./maxHeap";
 import heapSort from "./heapSort";
+import greatestCommonDivisor from "./greatestCommonDivisor";
 
 export {
+  greatestCommonDivisor,
   heapSort,
   maxHeap,
   sumOfArray,
