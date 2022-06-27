@@ -6,7 +6,7 @@ const greatestCommonDivisor = (nums) => {
   const smallest = Math.min(...nums);
 
   const modulos = { smallest, largest }; //! initialize
-  let length = 2; // greatest common divisor of two numbers
+  let length = 2; //! length represents how many numbers are used to find common gretest divisor
   let numOfZeros = 0;
 
   //! step 1 find smallest and largest of two numbers
