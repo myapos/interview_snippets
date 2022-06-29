@@ -84,8 +84,10 @@ import maxHeap from "./maxHeap";
 import heapSort from "./heapSort";
 import greatestCommonDivisor from "./greatestCommonDivisor";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings";
+import networkDelayTime from "./networkDelayTime";
 
 export {
+  networkDelayTime,
   greatestCommonDivisorOfStrings,
   greatestCommonDivisor,
   heapSort,

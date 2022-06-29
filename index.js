@@ -365,9 +365,38 @@ import * as utils from "./utils";
 // );
 
 // console.log(utils.heapSort([5, 1, 1, 2, 0, 0]));
-console.log(
-  utils.greatestCommonDivisorOfStrings(
-    "TAUXXTAUXXTAUXXTAUXXTAUXX",
-    "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"
-  )
-);
+// console.log(
+//   utils.greatestCommonDivisorOfStrings(
+//     "TAUXXTAUXXTAUXXTAUXXTAUXX",
+//     "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"
+//   )
+// );
+
+const test = [
+  [3, 1, 100],
+  [3, 2, 80],
+  [2, 1, 30],
+  [4, 3, 120],
+  [5, 4, 150],
+  [5, 6, 25],
+  [6, 4, 100],
+  [6, 8, 140],
+  [6, 7, 90],
+  [7, 8, 100],
+  [8, 1, 170],
+];
+
+// console.log(utils.networkDelayTime(test, 8, 5));
+// console.log(
+//   utils.networkDelayTime(
+//     [
+//       [2, 1, 1],
+//       [2, 3, 1],
+//       [3, 4, 1],
+//     ],
+//     4,
+//     2
+//   )
+// );
+
+console.log(utils.networkDelayTime([[1, 2, 1]], 2, 2));
