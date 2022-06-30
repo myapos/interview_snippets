@@ -85,8 +85,10 @@ import heapSort from "./heapSort";
 import greatestCommonDivisor from "./greatestCommonDivisor";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings";
 import networkDelayTime from "./networkDelayTime";
+import dfsGraph from "./dfsGraph";
 
 export {
+  dfsGraph,
   networkDelayTime,
   greatestCommonDivisorOfStrings,
   greatestCommonDivisor,
