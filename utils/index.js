@@ -86,8 +86,10 @@ import greatestCommonDivisor from "./greatestCommonDivisor";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings";
 import networkDelayTime from "./networkDelayTime";
 import dfsGraph from "./dfsGraph";
+import bellmanFord from "./bellmanFord";
 
 export {
+  bellmanFord,
   dfsGraph,
   networkDelayTime,
   greatestCommonDivisorOfStrings,

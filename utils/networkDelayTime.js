@@ -278,4 +278,4 @@ const networkDelayTime = (times, n, k) => {
   return ans === Infinity ? -1 : ans;
 };
 
-export default networkDelayTime;
+export default networkDelayTimeNotOptimized;

@@ -401,16 +401,33 @@ import * as utils from "./utils";
 
 // console.log(utils.networkDelayTime([[1, 2, 1]], 2, 2));
 
-const adjList = [
-  [1, 3],
-  [0],
-  [3, 8],
-  [0, 4, 5, 2],
-  [3, 6],
-  [3],
-  [4, 7],
-  [6],
-  [2],
+// const adjList = [
+//   [1, 3],
+//   [0],
+//   [3, 8],
+//   [0, 4, 5, 2],
+//   [3, 6],
+//   [3],
+//   [4, 7],
+//   [6],
+//   [2],
+// ];
+
+// console.log(utils.dfsGraph(adjList));
+
+const times = [
+  [1, 4, 2],
+  [1, 2, 9],
+  [4, 2, -4],
+  [2, 5, -3],
+  [4, 5, 6],
+  [3, 2, 3],
+  [5, 3, 7],
+  [3, 1, 5],
 ];
 
-console.log(utils.dfsGraph(adjList));
+const N = 5,
+  k = 1;
+
+console.log(utils.bellmanFord(times, N, k));
+console.log(utils.networkDelayTime(times, N, k));
