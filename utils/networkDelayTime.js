@@ -42,22 +42,32 @@ const networkDelayTimeNotOptimized = (times, n, k) => {
   /* Initializations */
   let distances = new Array(n).fill(-1).map(() => Infinity);
   let visited = [];
+  const adjacencyList = [];
   let unVisited = new Array(n).fill(-1).map((_, index) => index + 1);
 
   let currentVertex = k;
 
+  distances.forEach((_, vertex) => {
+    const vertexAdjacency = [];
+    times.forEach((time) => {
+      const [sourceVertex, targetVertex, weight] = time;
+      if (sourceVertex === vertex + 1) {
+        vertexAdjacency.push([targetVertex, weight]);
+      }
+    });
+    adjacencyList.push(vertexAdjacency);
+  });
+
   distances[currentVertex - 1] = 0;
   while (unVisited.length > 0 && currentVertex) {
     //! find all edges for currentVertex
-    const edges = findAllEdgesForNode(times, currentVertex);
+    const edges = adjacencyList[currentVertex - 1];
 
     let currentVertexCost = distances[currentVertex - 1];
-    console.log("edges", edges, " currentVertexCost", currentVertexCost);
 
     edges.forEach((edge) => {
-      const [u, v, w] = edge;
+      const [v, w] = edge;
       let minCost = Math.min(w + currentVertexCost, distances[v - 1]); //! u - 1 to keep ordering
-      console.log("minCost", minCost);
       updateDistances(v - 1, minCost, distances);
     });
 
@@ -70,29 +80,7 @@ const networkDelayTimeNotOptimized = (times, n, k) => {
     const { minVertexIdx } = findNextVertex(distances, visited);
 
     currentVertex = minVertexIdx;
-
-    // console.log(
-    //   "distances",
-    //   distances,
-    //   " unVisited",
-    //   unVisited,
-    //   " visited",
-    //   visited,
-    //   " currentVertex",
-    //   currentVertex
-    // );
   }
-
-  console.log(
-    "distances",
-    distances,
-    " unVisited",
-    unVisited,
-    " visited",
-    visited,
-    " currentVertex",
-    currentVertex
-  );
 
   const ans = Math.max(...distances);
 

@@ -429,5 +429,5 @@ const times = [
 const N = 5,
   k = 1;
 
-console.log(utils.bellmanFord(times, N, k));
+// console.log(utils.bellmanFord(times, N, k));
 console.log(utils.networkDelayTime(times, N, k));

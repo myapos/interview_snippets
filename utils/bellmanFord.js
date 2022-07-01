@@ -16,7 +16,6 @@ const updateDistanceCheck = (times, distances) => {
 };
 
 const bellmanFord = (times, n, k) => {
-  console.log("times", times, " n", n, " k", k);
   //! initializations
   //! build distances
   const distances = new Array(n).fill(Infinity);
