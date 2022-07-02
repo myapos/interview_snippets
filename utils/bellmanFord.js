@@ -21,20 +21,6 @@ const bellmanFord = (times, n, k) => {
   const distances = new Array(n).fill(Infinity);
   distances[k - 1] = 0;
 
-  /*   //! build Adjacency list
-  const adjacencyList = [];
-
-  distances.forEach((_, vertex) => {
-    const vertexAdjacency = [];
-    times.forEach((time) => {
-      const [sourceVertex, targetVertex, weight] = time;
-      if (sourceVertex === vertex + 1) {
-        vertexAdjacency.push([targetVertex, weight]);
-      }
-    });
-    adjacencyList.push(vertexAdjacency);
-  }); */
-
   //! n-1 loops all edges a.k.a times array and run a check
   //! if target cost is smaller than edge cost + vertex cost from distances array then update the distance array for the target
   for (let i = 1; i < n - 1; i++) {
