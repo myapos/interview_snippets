@@ -85,12 +85,16 @@ import heapSort from "./heapSort";
 import greatestCommonDivisor from "./greatestCommonDivisor";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings";
 import networkDelayTime from "./networkDelayTime";
+import bfsGraph from "./bfsGraph";
 import dfsGraph from "./dfsGraph";
 import bellmanFord from "./bellmanFord";
+import canFinish from "./courseSchedule";
 
 export {
-  bellmanFord,
   dfsGraph,
+  canFinish,
+  bellmanFord,
+  bfsGraph,
   networkDelayTime,
   greatestCommonDivisorOfStrings,
   greatestCommonDivisor,
