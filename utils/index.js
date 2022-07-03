@@ -89,8 +89,10 @@ import bfsGraph from "./bfsGraph";
 import dfsGraph from "./dfsGraph";
 import bellmanFord from "./bellmanFord";
 import canFinish from "./courseSchedule";
+import minCostClimbingStairs from "./minCostClimbingStairs";
 
 export {
+  minCostClimbingStairs,
   dfsGraph,
   canFinish,
   bellmanFord,
