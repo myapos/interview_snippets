@@ -1,3 +1,4 @@
+//! https://leetcode.com/problems/implement-trie-prefix-tree/
 class Node {
   constructor(value, end) {
     this.keys = {};
@@ -5,10 +6,6 @@ class Node {
     if (typeof end !== "undefined") {
       this.end = end;
     }
-
-    // if (value && value.length) {
-    //   this.value = value;
-    // }
   }
 }
 
@@ -31,7 +28,7 @@ Trie.prototype.buildList = function (chars) {
 };
 
 /* It will return the node to append the new trie */
-Trie.prototype.searchSubtrie = function (subtrie, chars, count, nextTrie) {
+Trie.prototype.searchSubtrie__ = function (subtrie, chars) {
   const first = chars.shift();
   const second = chars.length > 0 && chars[0];
   const hasNext = typeof subtrie.keys[first] !== "undefined";
@@ -42,22 +39,32 @@ Trie.prototype.searchSubtrie = function (subtrie, chars, count, nextTrie) {
   let previousTrieShouldBe = subtrie;
 
   if (isLocalRoot) {
-    return { node: subtrie.keys[first], count };
+    return { node: subtrie.keys[first] };
   }
 
   if (hasNext) {
     nextTrieShouldBe = subtrie.keys[first];
-    // previousTrieShouldBe = previousTrieShouldBe[first].keys;
   }
 
-  count--;
+  return this.searchSubtrie(nextTrieShouldBe, chars);
+};
 
-  return this.searchSubtrie(
-    nextTrieShouldBe,
-    chars,
-    count,
-    previousTrieShouldBe
-  );
+/* It will return the node to append the new trie */
+Trie.prototype.searchSubtrie = function (subTrie, chars) {
+  const first = chars.shift();
+  const nextSubTrie = subTrie.keys[first];
+  const second = chars.length > 0 && chars[0];
+
+  const isLocalRoot = typeof subTrie.keys[first].keys[second] === "undefined";
+
+  if (isLocalRoot) {
+    return nextSubTrie;
+  }
+
+  if (nextSubTrie) {
+    //! search keys of suTrie
+    return this.searchSubtrie(nextSubTrie, chars);
+  }
 };
 
 /**
@@ -68,9 +75,6 @@ Trie.prototype.insert = function (word) {
   //! split word in characters
   const chars = word.split("");
 
-  // check if the word exists
-  // if not
-
   const first = chars[0];
   const subtrie = this.root.keys[first];
   //! check if the first char already exists in keys of root
@@ -78,21 +82,22 @@ Trie.prototype.insert = function (word) {
   if (subtrie) {
     //! TODO
     //! search the trie prefixes to insert the word in the right node
-    const { node: localRoot, count } = this.searchSubtrie(
-      this.root,
-      chars,
-      chars.length,
-      this.root.keys
-    );
+    let localRoot = this.searchSubtrie(this.root, chars);
+
     const node = this.buildList(chars);
+
+    if (node.end) {
+      localRoot.end = true;
+    }
     localRoot.keys = {
-      ...localRoot.keys,
       ...node.keys,
+      ...localRoot.keys,
     };
   } else {
     const node = this.buildList([...chars]);
     this.root.keys = { ...this.root.keys, ...node.keys };
   }
+  return null;
 };
 
 Trie.prototype.searchRecursively = function (subTrie, chars) {
@@ -121,7 +126,7 @@ Trie.prototype.search = function (word) {
     //!subtrie exists
 
     const exists = this.searchRecursively(this.root, chars);
-    return exists;
+    return !!exists;
   }
 };
 
@@ -151,9 +156,7 @@ Trie.prototype.startsWith = function (prefix) {
     return false;
   } else {
     //!subtrie exists
-    const subTrie = this.root.keys[chars[0]];
-    const subChars = chars.slice(1);
-    const exists = this.startsWithRecursively(subTrie, subChars);
+    const exists = this.startsWithRecursively(this.root, chars);
     return exists;
   }
 };

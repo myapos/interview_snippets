@@ -1,4 +1,5 @@
 import * as utils from "./utils";
+import * as data from "./utils/trieData";
 
 // const matrix = [
 //   ["5", "3", ".", ".", "7", ".", ".", ".", "."],
@@ -529,39 +530,3 @@ numCourses = 7;
 prerequisites = [[0, 1]];
 numCourses = 2;
 // console.log(utils.canFinish(numCourses, prerequisites)); // true
-
-// console.log(utils.minCostClimbingStairs([10, 15, 20]));
-let word;
-
-var trie = new utils.Trie();
-// let word = "apple";
-// trie.insert(word);
-
-// let word = "dog";
-// trie.insert(word);
-// word = "dor";
-// trie.insert(word);
-word = "m";
-trie.insert(word);
-word = "mi";
-trie.insert(word);
-// debugger;
-word = "mir";
-trie.insert(word);
-word = "mia";
-trie.insert(word);
-word = "myros";
-trie.insert(word);
-word = "dog";
-trie.insert(word);
-word = "apple";
-trie.insert(word);
-word = "dash";
-trie.insert(word);
-console.log(trie.search("m"));
-console.log(trie.search("mi"));
-console.log(trie.search("myros"));
-console.log(trie.search("myros1"));
-console.log(trie.search("dash"));
-
-console.log(trie.startsWith("mia"));
