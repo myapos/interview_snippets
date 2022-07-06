@@ -91,8 +91,10 @@ import bellmanFord from "./bellmanFord";
 import canFinish from "./courseSchedule";
 import minCostClimbingStairs from "./minCostClimbingStairs";
 import Trie from "./Trie";
+import knightProbability from "./knightProbability";
 
 export {
+  knightProbability,
   Trie,
   minCostClimbingStairs,
   dfsGraph,

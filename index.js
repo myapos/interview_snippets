@@ -530,3 +530,6 @@ numCourses = 7;
 prerequisites = [[0, 1]];
 numCourses = 2;
 // console.log(utils.canFinish(numCourses, prerequisites)); // true
+
+console.log(utils.knightProbability(3, 2, 0, 0));
+// console.log(utils.knightProbability(1, 0, 0, 0));
