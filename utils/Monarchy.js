@@ -13,7 +13,7 @@ class Monarchy {
   }
 
   _findNode(value) {
-    //! runs a bfs
+    //! runs a dfs
     let queue = [this.node];
 
     while (queue.length > 0) {
@@ -55,7 +55,7 @@ class Monarchy {
   }
 
   getOrderOfSucession() {
-    //! runs a bfs
+    //! runs a dfs
     let queue = [this.node];
 
     let order = [];
