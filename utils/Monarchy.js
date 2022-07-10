@@ -10,20 +10,15 @@ class Monarchy {
   constructor(value) {
     const node = new Node(value);
     this.node = node;
+
+    //! use an internal hash map for O(1) access
+    this._nodes = {};
+    this._nodes[value] = node;
   }
 
   _findNode(value) {
-    //! runs a dfs
-    let queue = [this.node];
-
-    while (queue.length > 0) {
-      const first = queue.shift();
-      if (first.value === value) {
-        //! found node
-        return first;
-      }
-      const { children } = first;
-      queue = [...children, ...queue];
+    if (this._nodes[value]) {
+      return this._nodes[value];
     }
 
     return false;
@@ -38,6 +33,9 @@ class Monarchy {
       //! build childNode
       const childNode = new Node(childValue);
       parentNode.children.push(childNode);
+
+      //! add new child node to nodes
+      this._nodes[childValue] = childNode;
     }
 
     return false;
@@ -55,7 +53,7 @@ class Monarchy {
   }
 
   getOrderOfSucession() {
-    //! runs a dfs
+    //! runs a preorder dfs
     let queue = [this.node];
 
     let order = [];
