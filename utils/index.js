@@ -92,8 +92,10 @@ import canFinish from "./courseSchedule";
 import minCostClimbingStairs from "./minCostClimbingStairs";
 import Trie from "./Trie";
 import knightProbability from "./knightProbability";
+import Monarchy from "./Monarchy";
 
 export {
+  Monarchy,
   knightProbability,
   Trie,
   minCostClimbingStairs,

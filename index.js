@@ -513,23 +513,41 @@ numCourses = 3;
 
 // console.log(utils.canFinish(numCourses, prerequisites)); // true
 
-prerequisites = [
-  [1, 0],
-  [0, 3],
-  [0, 2],
-  [3, 2],
-  [2, 5],
-  [4, 5],
-  [5, 6],
-  [2, 4],
-];
-numCourses = 7;
+// prerequisites = [
+//   [1, 0],
+//   [0, 3],
+//   [0, 2],
+//   [3, 2],
+//   [2, 5],
+//   [4, 5],
+//   [5, 6],
+//   [2, 4],
+// ];
+// numCourses = 7;
 
 // console.log(utils.canFinish(numCourses, prerequisites)); // true
 
-prerequisites = [[0, 1]];
-numCourses = 2;
+// prerequisites = [[0, 1]];
+// numCourses = 2;
 // console.log(utils.canFinish(numCourses, prerequisites)); // true
 
-console.log(utils.knightProbability(3, 2, 0, 0));
+// console.log(utils.knightProbability(3, 2, 0, 0));
 // console.log(utils.knightProbability(1, 0, 0, 0));
+// console.log(utils.knightProbability(8, 30, 6, 4));
+
+// console.log()
+
+const monarchy = new utils.Monarchy("Jake");
+monarchy.birth("Catherine", "Jake");
+monarchy.birth("Jane", "Catherine");
+monarchy.birth("Farah", "Jane");
+monarchy.birth("Tom", "Jake");
+monarchy.birth("Celine", "Jake");
+monarchy.birth("Mark", "Catherine");
+monarchy.birth("Peter", "Celine");
+
+console.log(monarchy.getOrderOfSucession());
+monarchy.death("Jake");
+console.log(monarchy.getOrderOfSucession());
+monarchy.death("Jane");
+console.log(monarchy.getOrderOfSucession());
