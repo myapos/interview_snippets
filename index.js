@@ -535,19 +535,33 @@ numCourses = 3;
 // console.log(utils.knightProbability(1, 0, 0, 0));
 // console.log(utils.knightProbability(8, 30, 6, 4));
 
-// console.log()
+// const monarchy = new utils.Monarchy("Jake");
+// monarchy.birth("Catherine", "Jake");
+// monarchy.birth("Jane", "Catherine");
+// monarchy.birth("Farah", "Jane");
+// monarchy.birth("Tom", "Jake");
+// monarchy.birth("Celine", "Jake");
+// monarchy.birth("Mark", "Catherine");
+// monarchy.birth("Peter", "Celine");
 
-const monarchy = new utils.Monarchy("Jake");
-monarchy.birth("Catherine", "Jake");
-monarchy.birth("Jane", "Catherine");
-monarchy.birth("Farah", "Jane");
-monarchy.birth("Tom", "Jake");
-monarchy.birth("Celine", "Jake");
-monarchy.birth("Mark", "Catherine");
-monarchy.birth("Peter", "Celine");
+// console.log(monarchy.getOrderOfSucession());
+// monarchy.death("Jake");
+// console.log(monarchy.getOrderOfSucession());
+// monarchy.death("Jane");
+// console.log(monarchy.getOrderOfSucession());
 
-console.log(monarchy.getOrderOfSucession());
-monarchy.death("Jake");
-console.log(monarchy.getOrderOfSucession());
-monarchy.death("Jane");
-console.log(monarchy.getOrderOfSucession());
+// console.log(utils.coinChange([2], 3));
+// console.log(utils.coinChange([1], 0));
+// console.log(utils.coinChange([1, 2, 5], 3));
+// console.log(utils.coinChange([1, 2, 5], 12)); // 3
+// console.log(utils.coinChange([1, 2, 5], 11));
+// console.log(utils.coinChange([1, 2, 5], 12));
+
+// console.log(utils.coinChange([2, 3, 7, 5], 17));
+// console.log(utils.coinChange([7, 6], 12));
+// console.log(utils.coinChange([1, 3, 7, 5], 8)); // 2
+// console.log(utils.coinChange([186, 419, 83, 408], 6249)); // 20
+
+// console.log(utils.coinChange([1, 2, 5], 100)); // 20
+console.log(utils.coinChange([3, 7, 405, 436], 8839)); // 25
+//

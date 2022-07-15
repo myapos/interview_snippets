@@ -93,8 +93,16 @@ import minCostClimbingStairs from "./minCostClimbingStairs";
 import Trie from "./Trie";
 import knightProbability from "./knightProbability";
 import Monarchy from "./Monarchy";
+import naryPreorderTraversal from "./naryPreorderTraversal";
+import naryPostOrderTraversal from "./naryPostOrderTraversal";
+import naryLevelOrder from "./naryLevelOrder";
+import coinChange from "./coinChange";
 
 export {
+  coinChange,
+  naryLevelOrder,
+  naryPostOrderTraversal,
+  naryPreorderTraversal,
   Monarchy,
   knightProbability,
   Trie,
