@@ -577,6 +577,8 @@ numCourses = 3;
 //   ])
 // ); // 14
 // console.log(utils.maxProfit(maxProfitData)); // 0
-console.log(utils.maximumDifference([7, 1, 5, 4])); // 4
-console.log(utils.maximumDifference([9, 4, 3, 2])); // -1
-console.log(utils.maximumDifference([1, 5, 2, 10])); // 9
+// console.log(utils.maximumDifference([7, 1, 5, 4])); // 4
+// console.log(utils.maximumDifference([9, 4, 3, 2])); // -1
+// console.log(utils.maximumDifference([1, 5, 2, 10])); // 9
+console.log(utils.maxDistance([1, 1, 1, 6, 1, 1, 1])); // 3
+console.log(utils.maxDistance([1, 8, 3, 8, 3])); // 4
