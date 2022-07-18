@@ -98,8 +98,10 @@ import naryPostOrderTraversal from "./naryPostOrderTraversal";
 import naryLevelOrder from "./naryLevelOrder";
 import coinChange from "./coinChange";
 import maxProfit from "./maxProfit";
+import maximumDifference from "./maximumDifference";
 
 export {
+  maximumDifference,
   maxProfit,
   coinChange,
   naryLevelOrder,

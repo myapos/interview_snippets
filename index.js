@@ -566,8 +566,8 @@ numCourses = 3;
 // console.log(utils.coinChange([1, 2, 5], 100)); // 20
 // console.log(utils.coinChange([3, 7, 405, 436], 8839)); // 25
 
-console.log(utils.maxProfit([7, 1, 5, 3, 6, 4])); // 5
-console.log(utils.maxProfit([7, 6, 4, 3, 1])); // 0
+// console.log(utils.maxProfit([7, 1, 5, 3, 6, 4])); // 5
+// console.log(utils.maxProfit([7, 6, 4, 3, 1])); // 0
 // console.log(
 //   utils.maxProfit([
 //     7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3, 1, 7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3,
@@ -576,4 +576,7 @@ console.log(utils.maxProfit([7, 6, 4, 3, 1])); // 0
 //     4, 10, 3, 1,
 //   ])
 // ); // 14
-console.log(utils.maxProfit(maxProfitData)); // 0
+// console.log(utils.maxProfit(maxProfitData)); // 0
+console.log(utils.maximumDifference([7, 1, 5, 4])); // 4
+console.log(utils.maximumDifference([9, 4, 3, 2])); // -1
+console.log(utils.maximumDifference([1, 5, 2, 10])); // 9
