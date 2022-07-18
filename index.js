@@ -1,5 +1,6 @@
 import * as utils from "./utils";
 import * as data from "./utils/trieData";
+import maxProfitData from "./utils/data/maxProfitData";
 
 // const matrix = [
 //   ["5", "3", ".", ".", "7", ".", ".", ".", "."],
@@ -563,5 +564,16 @@ numCourses = 3;
 // console.log(utils.coinChange([186, 419, 83, 408], 6249)); // 20
 
 // console.log(utils.coinChange([1, 2, 5], 100)); // 20
-console.log(utils.coinChange([3, 7, 405, 436], 8839)); // 25
-//
+// console.log(utils.coinChange([3, 7, 405, 436], 8839)); // 25
+
+console.log(utils.maxProfit([7, 1, 5, 3, 6, 4])); // 5
+console.log(utils.maxProfit([7, 6, 4, 3, 1])); // 0
+// console.log(
+//   utils.maxProfit([
+//     7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3, 1, 7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3,
+//     1, 7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3, 1, 7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10,
+//     3, 1, 7, 6, 4, 7, 2, 4, 5, 7, 3, 4, 10, 3, 1, 15, 7, 6, 4, 7, 2, 4, 5, 7, 3,
+//     4, 10, 3, 1,
+//   ])
+// ); // 14
+console.log(utils.maxProfit(maxProfitData)); // 0

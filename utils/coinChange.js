@@ -9,6 +9,7 @@ const coinCombinationExist = ({ coins, amount, hash, logs }) => {
   const hashIndex = `${amount}`;
 
   if (typeof hash[hashIndex] !== "undefined") {
+    debugger;
     return hash[hashIndex];
   }
 
