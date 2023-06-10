@@ -44,8 +44,17 @@ const createCounter = (n) => {
 first return then increase the value but not return
 
 const createCounter = (n) => {
-  return n++
+    () => {
+        return n++
+    }
 };
+
+function createCounter(start) {
+  let count = start;
+  return function() {
+    return count++;
+  }
+}
 */
 
 export default createCounter;
