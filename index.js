@@ -580,5 +580,11 @@ numCourses = 3;
 // console.log(utils.maximumDifference([7, 1, 5, 4])); // 4
 // console.log(utils.maximumDifference([9, 4, 3, 2])); // -1
 // console.log(utils.maximumDifference([1, 5, 2, 10])); // 9
-console.log(utils.maxDistance([1, 1, 1, 6, 1, 1, 1])); // 3
-console.log(utils.maxDistance([1, 8, 3, 8, 3])); // 4
+// console.log(utils.maxDistance([1, 1, 1, 6, 1, 1, 1])); // 3
+// console.log(utils.maxDistance([1, 8, 3, 8, 3])); // 4
+
+console.log(
+  utils.maxDistancePairValues([55, 30, 5, 4, 2], [100, 20, 10, 10, 5])
+); // 2
+console.log(utils.maxDistancePairValues([2, 2, 2], [10, 10, 1])); // 1
+// console.log(utils.maxDistancePairValues([30, 29, 19, 5], [25, 25, 25, 25, 25])); // 2

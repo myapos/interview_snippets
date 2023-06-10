@@ -100,8 +100,10 @@ import coinChange from "./coinChange";
 import maxProfit from "./maxProfit";
 import maximumDifference from "./maximumDifference";
 import maxDistance from "./maxDistance";
+import maxDistancePairValues from "./maxDistancePairValues";
 
 export {
+  maxDistancePairValues,
   maxDistance,
   maximumDifference,
   maxProfit,
