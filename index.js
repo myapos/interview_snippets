@@ -583,8 +583,22 @@ numCourses = 3;
 // console.log(utils.maxDistance([1, 1, 1, 6, 1, 1, 1])); // 3
 // console.log(utils.maxDistance([1, 8, 3, 8, 3])); // 4
 
-console.log(
-  utils.maxDistancePairValues([55, 30, 5, 4, 2], [100, 20, 10, 10, 5])
-); // 2
-console.log(utils.maxDistancePairValues([2, 2, 2], [10, 10, 1])); // 1
+// console.log(
+//   utils.maxDistancePairValues([55, 30, 5, 4, 2], [100, 20, 10, 10, 5])
+// ); // 2
+// console.log(utils.maxDistancePairValues([2, 2, 2], [10, 10, 1])); // 1
 // console.log(utils.maxDistancePairValues([30, 29, 19, 5], [25, 25, 25, 25, 25])); // 2
+
+let counter = utils.counter(10);
+console.log("first time", counter());
+console.log("second time", counter());
+console.log("third time time", counter());
+console.log("third time time", counter());
+console.log("third time time", counter());
+
+counter = utils.counter(-2);
+console.log("first time", counter());
+console.log("second time", counter());
+console.log("third time time", counter());
+console.log("third time time", counter());
+console.log("third time time", counter());
