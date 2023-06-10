@@ -613,8 +613,16 @@ numCourses = 3;
 
 const sum = (a, b) => a + b;
 
-const memoizedSum = utils.memoize(sum);
+const mergeObjects = function (a, b) {
+  return { ...a, ...b };
+};
+
+// const memoizedSum = utils.memoize(sum);
+const memoizedObjects = utils.memoize(mergeObjects);
 // console.log(memoizedSum(2, 2));
 // console.log(memoizedSum(2, 2));
-console.log(memoizedSum(0, 0));
-console.log(memoizedSum(0, 0));
+// console.log(memoizedSum(0, 0));
+// console.log(memoizedSum(0, 0));
+debugger;
+console.log(memoizedObjects({}, {}));
+console.log(memoizedObjects({}, {}));

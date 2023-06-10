@@ -1,7 +1,7 @@
 const memoize = (fn) => {
   let cache = {};
   return function (...args) {
-    const key = args.toString();
+    const key = JSON.stringify(args);
 
     const isInCache = typeof cache[key] !== "undefined";
 
