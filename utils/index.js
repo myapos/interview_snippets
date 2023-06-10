@@ -17,6 +17,7 @@ import combinations from "./combinations";
 import combinationsOfLength from "./combinationsOfLength";
 import compareArrays from "./compareArrays";
 import compareElements from "./compareElements";
+import compose from "./functionComposition";
 import containerWithMostWater from "./containerWithMostWater";
 import costValue from "./costValue";
 import counter from "./counter";
@@ -56,6 +57,7 @@ import maxDistancePairValues from "./maxDistancePairValues";
 import maxHeap from "./maxHeap";
 import maximumDifference from "./maximumDifference";
 import maxProfit from "./maxProfit";
+import memoize from "./memoize";
 import mergeSort from "./mergeSort";
 import mergeTwoSortedLinkedLists from "./mergeTwoSortedLinkedLists";
 import minCostClimbingStairs from "./minCostClimbingStairs";
@@ -102,7 +104,6 @@ import typedOutStrings from "./typedOutStrings";
 import validParentheses from "./validParentheses";
 import validSudoku from "./validSudoku";
 import wallsAndGates from "./wallsAndGates";
-import compose from "./functionComposition";
 
 export {
   almostAPalindrome,
@@ -163,6 +164,7 @@ export {
   maxHeap,
   maximumDifference,
   maxProfit,
+  memoize,
   mergeSort,
   mergeTwoSortedLinkedLists,
   minCostClimbingStairs,

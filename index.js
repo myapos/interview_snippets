@@ -604,9 +604,17 @@ numCourses = 3;
 // console.log("third time time", counter());
 
 // const functions = [(x) => x + 1, (x) => x * x, (x) => 2 * x];
-const functions = [(x) => 10 * x, (x) => 10 * x, (x) => 10 * x];
+// const functions = [(x) => 10 * x, (x) => 10 * x, (x) => 10 * x];
 // const functions = [(x) => x + 1, (x) => x * x];
 // const functions = [];
-const composed = utils.compose(functions);
+// const composed = utils.compose(functions);
 
-console.log("composed", composed(1));
+// console.log("composed", composed(1));
+
+const sum = (a, b) => a + b;
+
+const memoizedSum = utils.memoize(sum);
+// console.log(memoizedSum(2, 2));
+// console.log(memoizedSum(2, 2));
+console.log(memoizedSum(0, 0));
+console.log(memoizedSum(0, 0));
