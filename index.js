@@ -589,16 +589,24 @@ numCourses = 3;
 // console.log(utils.maxDistancePairValues([2, 2, 2], [10, 10, 1])); // 1
 // console.log(utils.maxDistancePairValues([30, 29, 19, 5], [25, 25, 25, 25, 25])); // 2
 
-let counter = utils.counter(10);
-console.log("first time", counter());
-console.log("second time", counter());
-console.log("third time time", counter());
-console.log("third time time", counter());
-console.log("third time time", counter());
+// let counter = utils.counter(10);
+// console.log("first time", counter());
+// console.log("second time", counter());
+// console.log("third time time", counter());
+// console.log("third time time", counter());
+// console.log("third time time", counter());
 
-counter = utils.counter(-2);
-console.log("first time", counter());
-console.log("second time", counter());
-console.log("third time time", counter());
-console.log("third time time", counter());
-console.log("third time time", counter());
+// counter = utils.counter(-2);
+// console.log("first time", counter());
+// console.log("second time", counter());
+// console.log("third time time", counter());
+// console.log("third time time", counter());
+// console.log("third time time", counter());
+
+// const functions = [(x) => x + 1, (x) => x * x, (x) => 2 * x];
+const functions = [(x) => 10 * x, (x) => 10 * x, (x) => 10 * x];
+// const functions = [(x) => x + 1, (x) => x * x];
+// const functions = [];
+const composed = utils.compose(functions);
+
+console.log("composed", composed(1));
