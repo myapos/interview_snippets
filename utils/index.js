@@ -107,6 +107,7 @@ import validSudoku from "./validSudoku";
 import wallsAndGates from "./wallsAndGates";
 import skewedTreeFromArray from "./skewedTreeFromArray";
 import surroundedRegions from "./surroundedRegions";
+import maxAreaOfIslands from "./maxAreaOfIslands";
 
 export {
   almostAPalindrome,
@@ -218,4 +219,5 @@ export {
   wallsAndGates,
   skewedTreeFromArray,
   surroundedRegions,
+  maxAreaOfIslands,
 };
