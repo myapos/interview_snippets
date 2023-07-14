@@ -58,6 +58,7 @@ import maxHeap from "./maxHeap";
 import maximumDifference from "./maximumDifference";
 import maxProfit from "./maxProfit";
 import memoize from "./memoize";
+import memoizeAdvanced from "./memoizeAdvanced";
 import mergeSort from "./mergeSort";
 import mergeTwoSortedLinkedLists from "./mergeTwoSortedLinkedLists";
 import minCostClimbingStairs from "./minCostClimbingStairs";
@@ -104,6 +105,8 @@ import typedOutStrings from "./typedOutStrings";
 import validParentheses from "./validParentheses";
 import validSudoku from "./validSudoku";
 import wallsAndGates from "./wallsAndGates";
+import skewedTreeFromArray from "./skewedTreeFromArray";
+import surroundedRegions from "./surroundedRegions";
 
 export {
   almostAPalindrome,
@@ -165,6 +168,7 @@ export {
   maximumDifference,
   maxProfit,
   memoize,
+  memoizeAdvanced,
   mergeSort,
   mergeTwoSortedLinkedLists,
   minCostClimbingStairs,
@@ -212,4 +216,6 @@ export {
   validParentheses,
   validSudoku,
   wallsAndGates,
+  skewedTreeFromArray,
+  surroundedRegions,
 };
