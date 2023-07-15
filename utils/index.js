@@ -108,6 +108,7 @@ import wallsAndGates from "./wallsAndGates";
 import skewedTreeFromArray from "./skewedTreeFromArray";
 import surroundedRegions from "./surroundedRegions";
 import maxAreaOfIslands from "./maxAreaOfIslands";
+import diagonalPrime from "./diagonalPrime";
 
 export {
   almostAPalindrome,
@@ -220,4 +221,5 @@ export {
   skewedTreeFromArray,
   surroundedRegions,
   maxAreaOfIslands,
+  diagonalPrime,
 };
