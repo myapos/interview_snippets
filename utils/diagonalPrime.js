@@ -86,12 +86,12 @@ const diagonalPrime = (nums) => {
   // modify the check if is a prime for primary and secondary diagonal
   // keep the max for those two
 
-  let maxPrimeNumber = 0;
-  let maxNum = -Infinity;
+  // finally a third approach is to use the is prime function where
+  // we can detect if a number is prime or not.
+  // first it gets the root of an element and searches up to the root
+  // if the number is divisible. if it is then the number is not a prime number
 
-  for (let i = 0; i < nums.length; i++) {
-    maxNum = Math.max(maxNum, ...nums[i]);
-  }
+  let maxPrimeNumber = 0;
 
   for (let i = 0; i < nums.length; i++) {
     maxPrimeNumber = Math.max(
