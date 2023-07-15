@@ -11,12 +11,12 @@ const primes = [
 
 describe("findPrimeNumbers up to n", () => {
   it("should find prime numbers up to 2", () => {
-    expect(findPrimeNumbers(2)).toEqual(primes[0]);
+    expect(findPrimeNumbers(2)).toEqual(new Set(primes[0]));
   });
   it("should return empty array", () => {
-    expect(findPrimeNumbers(0)).toEqual(primes[1]);
+    expect(findPrimeNumbers(0)).toEqual(new Set(primes[1]));
   });
   it("should find prime numbers up to 100", () => {
-    expect(findPrimeNumbers(100)).toEqual(primes[3]);
+    expect(findPrimeNumbers(100)).toEqual(new Set(primes[3]));
   });
 });

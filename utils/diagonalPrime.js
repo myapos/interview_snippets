@@ -4,11 +4,11 @@
 
 export const findPrimeNumbers = (n) => {
   if (n <= 0) {
-    return [];
+    return new Set();
   }
 
   // a prime number is a natural number that is only divided by itself and one
-  const primes = [];
+  const primes = new Set();
   const hash = {};
 
   for (let i = 2; i <= n; i++) {
@@ -24,7 +24,7 @@ export const findPrimeNumbers = (n) => {
 
     if (canBeAPrime) {
       if (i === 2 || i === 3) {
-        primes.push(i);
+        primes.add(i);
         continue;
       }
 
@@ -36,8 +36,8 @@ export const findPrimeNumbers = (n) => {
       // get the prime numbers up to square
 
       if (typeof hash[square] === "undefined") {
-        hash[square] = primes.filter((prime) => prime <= square);
-        primesToCompare = primes.filter((prime) => prime <= square);
+        hash[square] = Array.from(primes).filter((prime) => prime <= square);
+        primesToCompare = Array.from(primes).filter((prime) => prime <= square);
       } else {
         primesToCompare = hash[square];
       }
@@ -47,12 +47,28 @@ export const findPrimeNumbers = (n) => {
       );
 
       if (!isDivisible) {
-        primes.push(i);
+        primes.add(i);
       }
     }
   }
 
   return primes;
+};
+
+const isPrime = (number) => {
+  // 1 and any negative number are not prime
+  if (number <= 1) {
+    return false;
+  }
+
+  // Check for divisibility from 2 to the square root of the number
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
 };
 
 const diagonalPrime = (nums) => {
@@ -77,21 +93,11 @@ const diagonalPrime = (nums) => {
     maxNum = Math.max(maxNum, ...nums[i]);
   }
 
-  const primeNumbers = findPrimeNumbers(maxNum);
-
-  const primeNumbersSet = new Set(primeNumbers);
-
   for (let i = 0; i < nums.length; i++) {
-    const primaryDiagonalElement = nums[i][i];
-    const secondaryDiagonalElement = nums[i][nums.length - i - 1];
-
-    let primaryElementIsPrime = primeNumbersSet.has(primaryDiagonalElement);
-    let secondaryElementIsPrime = primeNumbersSet.has(secondaryDiagonalElement);
-
     maxPrimeNumber = Math.max(
       maxPrimeNumber,
-      primaryElementIsPrime ? nums[i][i] : 0,
-      secondaryElementIsPrime ? nums[i][nums.length - i - 1] : 0
+      isPrime(nums[i][i]) ? nums[i][i] : 0,
+      isPrime(nums[i][nums.length - i - 1]) ? nums[i][nums.length - i - 1] : 0
     );
   }
 
