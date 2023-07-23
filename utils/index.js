@@ -109,6 +109,8 @@ import skewedTreeFromArray from "./skewedTreeFromArray";
 import surroundedRegions from "./surroundedRegions";
 import maxAreaOfIslands from "./maxAreaOfIslands";
 import diagonalPrime from "./diagonalPrime";
+import palindromePartitioning from "./palindromePartitioning";
+import permute from "./permute";
 
 export {
   almostAPalindrome,
@@ -135,6 +137,7 @@ export {
   decimalToBinary,
   deepCopy,
   dfsGraph,
+  diagonalPrime,
   factorial,
   factorialTCR,
   factorialWithCaching,
@@ -163,6 +166,7 @@ export {
   linkedListReversalFromRange,
   List,
   longestSubStrWithoutRepeatingChars,
+  maxAreaOfIslands,
   maxDepth,
   maxDistance,
   maxDistancePairValues,
@@ -186,6 +190,8 @@ export {
   omitFourDigit,
   orangesRotting,
   palindrome,
+  palindromePartitioning,
+  permute,
   pickingNumbers,
   popArray,
   postorderTraversal,
@@ -201,10 +207,12 @@ export {
   searchMatrix,
   searchRange,
   setZeroes,
+  skewedTreeFromArray,
   squaresComparison,
   sudokuSolver,
   sum,
   sumOfArray,
+  surroundedRegions,
   swapElementsInArray,
   swapNodesInList,
   transpose,
@@ -218,8 +226,4 @@ export {
   validParentheses,
   validSudoku,
   wallsAndGates,
-  skewedTreeFromArray,
-  surroundedRegions,
-  maxAreaOfIslands,
-  diagonalPrime,
 };
