@@ -675,4 +675,6 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // const solution = utils.maxAreaOfIslands(boards[0]);
 // utils.diagonalPrime();
 // utils.palindromePartitioning("aab");
-console.log(utils.permute([1, 2, 3, 4]));
+// console.log(utils.permute([1, 2, 3, 4]));
+// console.log(utils.letterCombinations("234"));
+console.log(utils.letterCombinations(""));

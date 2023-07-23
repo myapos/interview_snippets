@@ -111,6 +111,7 @@ import maxAreaOfIslands from "./maxAreaOfIslands";
 import diagonalPrime from "./diagonalPrime";
 import palindromePartitioning from "./palindromePartitioning";
 import permute from "./permute";
+import letterCombinations from "./letterCombinations";
 
 export {
   almostAPalindrome,
@@ -161,6 +162,7 @@ export {
   isMagicSquare,
   isValidBST,
   knightProbability,
+  letterCombinations,
   levelOrder,
   linkedListReversal,
   linkedListReversalFromRange,
