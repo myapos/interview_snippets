@@ -677,4 +677,6 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // utils.palindromePartitioning("aab");
 // console.log(utils.permute([1, 2, 3, 4]));
 // console.log(utils.letterCombinations("234"));
-console.log(utils.letterCombinations(""));
+// console.log(utils.letterCombinations(""));
+// console.log(utils.generateParentheses(3));
+console.log(utils.combinationSum2([2, 5, 2, 1, 2], 5));

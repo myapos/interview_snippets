@@ -112,6 +112,8 @@ import diagonalPrime from "./diagonalPrime";
 import palindromePartitioning from "./palindromePartitioning";
 import permute from "./permute";
 import letterCombinations from "./letterCombinations";
+import generateParentheses from "./generateParentheses";
+import combinationSum2 from "./combinationSum2";
 
 export {
   almostAPalindrome,
@@ -128,6 +130,7 @@ export {
   coinChange,
   combinations,
   combinationsOfLength,
+  combinationSum2,
   compareArrays,
   compareElements,
   compose,
@@ -150,6 +153,7 @@ export {
   generateCombinations,
   generateCombinationSwaps,
   generateMagicSquares,
+  generateParentheses,
   generatePossiblePermutationsRecursiveHeaps,
   generatePossiblePermutationsSimpleRecursion,
   generateSingleSquare,
