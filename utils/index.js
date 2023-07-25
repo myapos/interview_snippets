@@ -115,9 +115,9 @@ import letterCombinations from "./letterCombinations";
 import generateParentheses from "./generateParentheses";
 import combinationSum2 from "./combinationSum2";
 import getMaximumGold from "./getMaximumGold";
+import wordSearch from "./wordSearch";
 
 export {
-  getMaximumGold,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
@@ -160,6 +160,7 @@ export {
   generatePossiblePermutationsSimpleRecursion,
   generateSingleSquare,
   generateSquares,
+  getMaximumGold,
   greatestCommonDivisor,
   greatestCommonDivisorOfStrings,
   heapSort,
@@ -234,4 +235,5 @@ export {
   validParentheses,
   validSudoku,
   wallsAndGates,
+  wordSearch,
 };
