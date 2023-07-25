@@ -679,4 +679,54 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // console.log(utils.letterCombinations("234"));
 // console.log(utils.letterCombinations(""));
 // console.log(utils.generateParentheses(3));
-console.log(utils.combinationSum2([2, 5, 2, 1, 2], 5));
+// console.log(utils.combinationSum2([2, 5, 2, 1, 2], 5));
+
+// console.log(
+//   utils.getMaximumGold([
+//     [1, 0, 7],
+//     [2, 0, 6],
+//     [3, 4, 5],
+//     [0, 3, 0],
+//     [9, 0, 20],
+//   ])
+// );
+// 28
+
+// console.log(
+//   utils.getMaximumGold([
+//     [0, 6, 0],
+//     [5, 8, 7],
+//     [0, 9, 0],
+//   ])
+// );
+// 24
+
+// console.log(
+//   utils.getMaximumGold([
+//     [1, 0, 7, 0, 0, 0],
+//     [2, 0, 6, 0, 1, 0],
+//     [3, 5, 6, 7, 4, 2],
+//     [4, 3, 1, 0, 2, 0],
+//     [3, 0, 5, 0, 20, 0],
+//   ])
+// ); // 60
+
+console.log(
+  utils.getMaximumGold([
+    [0, 0, 34, 0, 5, 0, 7, 0, 0, 0],
+    [0, 0, 0, 0, 21, 0, 0, 0, 0, 0],
+    [0, 18, 0, 0, 8, 0, 0, 0, 4, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [15, 0, 0, 0, 0, 22, 0, 0, 0, 21],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 7, 0, 0, 0, 0, 0, 0, 38, 0],
+  ])
+); // 38
+
+console.log(
+  utils.getMaximumGold([
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+  ])
+); // 0

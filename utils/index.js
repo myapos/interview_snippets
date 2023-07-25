@@ -114,8 +114,10 @@ import permute from "./permute";
 import letterCombinations from "./letterCombinations";
 import generateParentheses from "./generateParentheses";
 import combinationSum2 from "./combinationSum2";
+import getMaximumGold from "./getMaximumGold";
 
 export {
+  getMaximumGold,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
