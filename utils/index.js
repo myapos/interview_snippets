@@ -116,6 +116,7 @@ import generateParentheses from "./generateParentheses";
 import combinationSum2 from "./combinationSum2";
 import getMaximumGold from "./getMaximumGold";
 import wordSearch from "./wordSearch";
+import grayCode from "./grayCode";
 
 export {
   almostAPalindrome,
@@ -161,6 +162,7 @@ export {
   generateSingleSquare,
   generateSquares,
   getMaximumGold,
+  grayCode,
   greatestCommonDivisor,
   greatestCommonDivisorOfStrings,
   heapSort,

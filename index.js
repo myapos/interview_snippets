@@ -766,17 +766,25 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // );
 // false
 
-console.log(
-  utils.wordSearch(
-    [
-      ["a", "a", "b", "a", "a", "b"],
-      ["b", "a", "b", "a", "b", "b"],
-      ["b", "a", "b", "b", "b", "b"],
-      ["a", "a", "b", "a", "b", "a"],
-      ["b", "b", "a", "a", "a", "b"],
-      ["b", "b", "b", "a", "b", "a"],
-    ],
-    "aaaababab"
-  )
-);
+// console.log(
+//   utils.wordSearch(
+//     [
+//       ["a", "a", "b", "a", "a", "b"],
+//       ["b", "a", "b", "a", "b", "b"],
+//       ["b", "a", "b", "b", "b", "b"],
+//       ["a", "a", "b", "a", "b", "a"],
+//       ["b", "b", "a", "a", "a", "b"],
+//       ["b", "b", "b", "a", "b", "a"],
+//     ],
+//     "aaaababab"
+//   )
+// );
 // true
+
+console.log(utils.grayCode(3));
+// [0,1,3,2,6,7,5,4]
+// [
+// 000, 001, 011,
+// 010, 110, 111,
+// 101, 100]
+// wrong [0,1,3,2,6,4,5,7]
