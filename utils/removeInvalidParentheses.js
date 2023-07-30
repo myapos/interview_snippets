@@ -33,25 +33,25 @@ const removeInvalidParentheses = (input) => {
   let seen = {};
   let min = Infinity;
   let result = [];
+  let flag = "seen";
 
   const searchForMin = (s) => {
-    if (seen[s.toString()]) {
-      return seen[s.toString()];
+    const isValid = isValidParenthenses(s);
+
+    if (isValid && numOfRemovals <= min) {
+      min = numOfRemovals;
     }
 
-    if (isValidParenthenses(s)) {
-      if (numOfRemovals <= min) {
-        min = numOfRemovals;
-      }
+    if (isValid) {
       result.push(s);
-      seen[s.toString()] = true;
+      seen[s.toString()] = flag;
 
-      return true;
+      return flag;
     }
 
     if (s.length === 0) {
-      seen[s.toString()] = false;
-      return false;
+      seen[s.toString()] = flag;
+      return flag;
     }
 
     for (let charIdx = 0; charIdx < s.length; charIdx++) {
@@ -71,7 +71,7 @@ const removeInvalidParentheses = (input) => {
       }
     }
 
-    return false;
+    return flag;
   };
 
   searchForMin(input);
