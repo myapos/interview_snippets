@@ -789,4 +789,5 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // 101, 100]
 // wrong [0,1,3,2,6,4,5,7]
 
-console.log(utils.readBinaryWatch(1));
+// console.log(utils.readBinaryWatch(1));
+console.log(utils.removeInvalidParentheses("())("));
