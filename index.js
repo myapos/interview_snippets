@@ -781,10 +781,12 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // );
 // true
 
-console.log(utils.grayCode(3));
+// console.log(utils.grayCode(3));
 // [0,1,3,2,6,7,5,4]
 // [
 // 000, 001, 011,
 // 010, 110, 111,
 // 101, 100]
 // wrong [0,1,3,2,6,4,5,7]
+
+console.log(utils.readBinaryWatch(1));

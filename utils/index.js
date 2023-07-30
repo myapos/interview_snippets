@@ -117,8 +117,12 @@ import combinationSum2 from "./combinationSum2";
 import getMaximumGold from "./getMaximumGold";
 import wordSearch from "./wordSearch";
 import grayCode from "./grayCode";
+import readBinaryWatch from "./readBinaryWatch";
+import removeInvalidParentheses from "./removeInvalidParentheses";
 
 export {
+  removeInvalidParentheses,
+  readBinaryWatch,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
