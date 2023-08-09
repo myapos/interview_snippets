@@ -12,8 +12,7 @@ var Solution = function (nums) {
  * @return {number[]}
  */
 Solution.prototype.reset = function () {
-  this.shuffled = [...this.initial];
-  return this.shuffled;
+  return [...this.initial];
 };
 
 Solution.prototype.generateRandomNumberInRange = (min, max) => {
@@ -28,20 +27,15 @@ Solution.prototype.generateRandomNumberInRange = (min, max) => {
  * @return {number[]}
  */
 Solution.prototype.shuffle = function () {
-  const temp = new Array(...this.initial);
-
-  const length = temp.length;
+  const length = this.shuffled.length;
   for (let i = length - 1; i > 0; i--) {
     const j = this.generateRandomNumberInRange(0, i + 1);
 
     // swap
-    const current = temp[i];
-    const tempEl = current;
-    temp[i] = temp[j];
-    temp[j] = tempEl;
+    const current = this.shuffled[i];
+    this.shuffled[i] = this.shuffled[j];
+    this.shuffled[j] = current;
   }
-
-  this.shuffled = [...temp];
 
   return this.shuffled;
 };
