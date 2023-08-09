@@ -1,28 +1,5 @@
 // https://leetcode.com/problems/shuffle-an-array/
 
-const generateRandomNumberInRange = (min, max) => {
-  const x = Math.random();
-
-  return min + Math.floor(x * (max - min));
-};
-
-// https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
-// Fisher - Yates algorithm
-const shuffle = (ar) => {
-  const length = ar.length;
-  for (let i = length - 1; i > 0; i--) {
-    const j = generateRandomNumberInRange(0, i + 1);
-
-    // swap
-    const current = ar[i];
-    const temp = current;
-    ar[i] = ar[j];
-    ar[j] = temp;
-  }
-
-  return ar;
-};
-
 /**
  * @param {number[]} nums
  */
@@ -39,15 +16,32 @@ Solution.prototype.reset = function () {
   return this.shuffled;
 };
 
+Solution.prototype.generateRandomNumberInRange = (min, max) => {
+  const x = Math.random();
+
+  return min + Math.floor(x * (max - min));
+};
+// https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+// https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
+// Fisher - Yates algorithm
 /**
  * @return {number[]}
  */
 Solution.prototype.shuffle = function () {
-  // use the sort array and rand
-  // rand between zero and 0.5
   const temp = new Array(...this.initial);
-  const shuffled = shuffle(temp);
-  this.shuffled = [...shuffled];
+
+  const length = temp.length;
+  for (let i = length - 1; i > 0; i--) {
+    const j = this.generateRandomNumberInRange(0, i + 1);
+
+    // swap
+    const current = temp[i];
+    const tempEl = current;
+    temp[i] = temp[j];
+    temp[j] = tempEl;
+  }
+
+  this.shuffled = [...temp];
 
   return this.shuffled;
 };
