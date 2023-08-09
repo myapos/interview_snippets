@@ -119,6 +119,7 @@ import wordSearch from "./wordSearch";
 import grayCode from "./grayCode";
 import readBinaryWatch from "./readBinaryWatch";
 import removeInvalidParentheses from "./removeInvalidParentheses";
+import ArrayShuffle from "./arrayShuffle";
 
 export {
   removeInvalidParentheses,
@@ -242,4 +243,5 @@ export {
   validSudoku,
   wallsAndGates,
   wordSearch,
+  ArrayShuffle,
 };

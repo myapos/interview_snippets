@@ -790,4 +790,13 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // wrong [0,1,3,2,6,4,5,7]
 
 // console.log(utils.readBinaryWatch(1));
-console.log(utils.removeInvalidParentheses("())("));
+// console.log(utils.removeInvalidParentheses("())("));
+const solution = new utils.ArrayShuffle([1, 2, 3]);
+
+console.log("initial solution.initial", solution.initial);
+solution.shuffle();
+console.log("shuffled solution.shuffled", solution.shuffled);
+// solution.reset();
+// console.log("reset solution.shuffled", solution.shuffled);
+// solution.shuffle();
+// console.log("shuffled solution.shuffled", solution.shuffled);
