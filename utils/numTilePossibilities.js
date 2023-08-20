@@ -7,7 +7,7 @@ const numTilePossibilities = (tiles) => {
   let hash = {};
 
   const recurse = ({ tiles, res }) => {
-    if (typeof hash[res] !== "undefined" || tiles.length === 0) {
+    if (tiles.length === 0) {
       return res;
     }
 
@@ -20,12 +20,16 @@ const numTilePossibilities = (tiles) => {
 
       const tempRes = `${cur}${res}`;
 
-      const val = recurse({
-        tiles: rest,
-        res: tempRes,
-      });
+      //! it could be used in the exit condition too with hash[res] check but
+      //! here it is slightly better since we avoid recursive calls from the start
+      if (typeof hash[tempRes] === "undefined") {
+        const val = recurse({
+          tiles: rest,
+          res: tempRes,
+        });
 
-      hash[val] = val;
+        hash[val] = val;
+      }
     }
 
     return res;
