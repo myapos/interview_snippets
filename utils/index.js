@@ -120,8 +120,10 @@ import grayCode from "./grayCode";
 import readBinaryWatch from "./readBinaryWatch";
 import removeInvalidParentheses from "./removeInvalidParentheses";
 import ArrayShuffle from "./arrayShuffle";
+import numTilePossibilities from "./numTilePossibilities";
 
 export {
+  numTilePossibilities,
   removeInvalidParentheses,
   readBinaryWatch,
   almostAPalindrome,

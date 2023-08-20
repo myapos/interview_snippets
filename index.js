@@ -793,10 +793,12 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // console.log(utils.removeInvalidParentheses("())("));
 const solution = new utils.ArrayShuffle([1, 2, 3]);
 
-console.log("initial solution.initial", solution.initial);
-solution.shuffle();
-console.log("shuffled solution.shuffled", solution.shuffled);
+// console.log("initial solution.initial", solution.initial);
+// solution.shuffle();
+// console.log("shuffled solution.shuffled", solution.shuffled);
 // solution.reset();
 // console.log("reset solution.shuffled", solution.shuffled);
 // solution.shuffle();
 // console.log("shuffled solution.shuffled", solution.shuffled);
+
+console.log(utils.numTilePossibilities("AAB"));
