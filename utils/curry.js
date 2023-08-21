@@ -1,3 +1,4 @@
+// https://www.greatfrontend.com/questions/javascript/curry?list=one-week
 function curry(func) {
   const listArgs = [];
   return function curried(arg) {
