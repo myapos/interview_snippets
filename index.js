@@ -803,11 +803,39 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 
 // console.log(utils.numTilePossibilities("AAB"));
 
-const empty = () => 0;
-const square = (a) => a * a;
-const add = (a, b) => a * b;
-const mulThree = (a, b, c) => a * b * c;
+// const empty = () => 0;
+// const square = (a) => a * a;
+// const add = (a, b) => a * b;
+// const mulThree = (a, b, c) => a * b * c;
 
-const curried = utils.curry(mulThree);
+// const curried = utils.curry(mulThree);
 
-console.log(curried(7)(3)(2));
+// console.log(curried(7)(3)(2));
+
+// console.log(utils.classNames("foo", "bar"));
+// console.log(
+//   utils.classNames("foo", { bar: true, foo2: false }, "baz", { quux: true })
+// );
+
+// console.log(
+//   utils.classNames(null, false, "bar", undefined, 0, 1, { baz: null }, "")
+// );
+
+// console.log(utils.classNames("a", ["b", { c: true, d: false }]));
+// console.log(utils.classNames("a", ["b", ["c", ["d"]]]));
+// console.log(utils.classNames("foo"));
+// console.log(utils.classNames([]));
+// console.log(utils.classNames({ foo: true, bar: false, qux: true }));
+// console.log(utils.classNames({ "foo-bar": true }));
+// console.log(utils.classNames({ foo: true }, { bar: true }));
+console.log(
+  utils.classNames("boo", true && "loo", false && "booz", {
+    foo: true,
+    bar: false,
+    baz: 1,
+  })
+);
+
+console.log(
+  utils.classNames(null, false, "bar", undefined, 0, 1, { baz: null }, "")
+);

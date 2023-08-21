@@ -122,8 +122,10 @@ import removeInvalidParentheses from "./removeInvalidParentheses";
 import ArrayShuffle from "./arrayShuffle";
 import numTilePossibilities from "./numTilePossibilities";
 import curry from "./curry";
+import classNames from "./classNames";
 
 export {
+  classNames,
   curry,
   numTilePossibilities,
   removeInvalidParentheses,
