@@ -791,7 +791,7 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 
 // console.log(utils.readBinaryWatch(1));
 // console.log(utils.removeInvalidParentheses("())("));
-const solution = new utils.ArrayShuffle([1, 2, 3]);
+// const solution = new utils.ArrayShuffle([1, 2, 3]);
 
 // console.log("initial solution.initial", solution.initial);
 // solution.shuffle();
@@ -801,4 +801,13 @@ const solution = new utils.ArrayShuffle([1, 2, 3]);
 // solution.shuffle();
 // console.log("shuffled solution.shuffled", solution.shuffled);
 
-console.log(utils.numTilePossibilities("AAB"));
+// console.log(utils.numTilePossibilities("AAB"));
+
+const empty = () => 0;
+const square = (a) => a * a;
+const add = (a, b) => a * b;
+const mulThree = (a, b, c) => a * b * c;
+
+const curried = utils.curry(mulThree);
+
+console.log(curried(7)(3)(2));

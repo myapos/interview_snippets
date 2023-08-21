@@ -121,8 +121,10 @@ import readBinaryWatch from "./readBinaryWatch";
 import removeInvalidParentheses from "./removeInvalidParentheses";
 import ArrayShuffle from "./arrayShuffle";
 import numTilePossibilities from "./numTilePossibilities";
+import curry from "./curry";
 
 export {
+  curry,
   numTilePossibilities,
   removeInvalidParentheses,
   readBinaryWatch,
