@@ -828,14 +828,24 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 // console.log(utils.classNames({ foo: true, bar: false, qux: true }));
 // console.log(utils.classNames({ "foo-bar": true }));
 // console.log(utils.classNames({ foo: true }, { bar: true }));
-console.log(
-  utils.classNames("boo", true && "loo", false && "booz", {
-    foo: true,
-    bar: false,
-    baz: 1,
-  })
-);
+// console.log(
+//   utils.classNames("boo", true && "loo", false && "booz", {
+//     foo: true,
+//     bar: false,
+//     baz: 1,
+//   })
+// );
+
+// console.log(
+//   utils.classNames(null, false, "bar", undefined, 0, 1, { baz: null }, "")
+// );
+
+// console.log(utils.listFormat(["Bob"]));
+// console.log(utils.listFormat(["Bob"], { length: 2 }));
+// console.log(
+//   utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 4 })
+// );
 
 console.log(
-  utils.classNames(null, false, "bar", undefined, 0, 1, { baz: null }, "")
+  utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 3 })
 );
