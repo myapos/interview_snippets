@@ -850,15 +850,59 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 //   utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 3 })
 // );
 
-const test = async () => {
-  const p0 = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(2);
-    }, 10);
-  });
+// const test = async () => {
+//   const p0 = new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(2);
+//     }, 10);
+//   });
 
-  const res = await utils.promiseAll([p0]);
-  console.log("res", res);
-};
+//   const res = await utils.promiseAll([p0]);
+//   console.log("res", res);
+// };
 
-test();
+// test();
+
+// console.log(utils.deepEqual("foo", "foo"));
+// console.log(utils.deepEqual({ id: 1 }, { id: 1 }));
+// console.log(utils.deepEqual([1, 2, 3], [1, 2, 3]));
+// console.log(utils.deepEqual([{ id: "1" }], [{ id: "2" }]));
+// console.log(utils.deepEqual(true, 1));
+// console.log(utils.deepEqual(null, null));
+// console.log(utils.deepEqual([], []));
+// console.log(utils.deepEqual({}, []));
+// console.log(utils.deepEqual([1], [1]));
+// console.log(utils.deepEqual([1], ["1"]));
+// console.log(utils.deepEqual([1, 2], [1, 2]));
+// console.log(utils.deepEqual([1, 2, 3], [1, 2, 3]));
+// console.log(utils.deepEqual([1, 2, 3], [1, 3, 2]));
+// console.log(utils.deepEqual([true], [true]));
+// console.log(utils.deepEqual([true], [1]));
+// console.log(utils.deepEqual([false], [false]));
+// console.log(utils.deepEqual([true], [false]));
+// console.log(utils.deepEqual([0], [false]));
+// console.log(utils.deepEqual([null], [null]));
+// console.log(utils.deepEqual([{ foo: 1 }], [{ foo: 1 }]));
+// console.log(utils.deepEqual([{ foo: 1 }], [{ foo: 1 }]));
+// console.log(utils.deepEqual({}, {}));
+// console.log(utils.deepEqual({ foo: "bar", id: 1 }, { foo: "bar", id: 1 }));
+// console.log(
+//   utils.deepEqual(
+//     { foo: "bar", item: [1, 2, { baz: "baz" }] },
+//     { foo: "bar", item: [1, 2, { baz: "baz" }] }
+//   )
+// );
+
+// console.log(
+//   utils.deepEqual(
+//     { foo: "bar", item: [1, 2, { baz: "baz" }] },
+//     { foo: "bar", item: [1, 2, { baz: "baz" }], id: 1 }
+//   )
+// );
+console.log(
+  utils.deepEqual({ foo: null, baz: "baz" }, { bar: "bar", baz: "baz" })
+);
+
+console.log(
+  utils.deepEqual({ foo: null, bar: "baz" }, { foo: null, bar: "baz" })
+);

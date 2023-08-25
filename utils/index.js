@@ -125,8 +125,10 @@ import curry from "./curry";
 import classNames from "./classNames";
 import listFormat from "./listFormat";
 import promiseAll from "./promiseAll";
+import deepEqual from "./deepEqual";
 
 export {
+  deepEqual,
   promiseAll,
   listFormat,
   classNames,
