@@ -124,8 +124,10 @@ import numTilePossibilities from "./numTilePossibilities";
 import curry from "./curry";
 import classNames from "./classNames";
 import listFormat from "./listFormat";
+import promiseAll from "./promiseAll";
 
 export {
+  promiseAll,
   listFormat,
   classNames,
   curry,

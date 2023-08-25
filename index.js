@@ -846,6 +846,19 @@ const memoizeReduceFn = utils.memoizeAdvanced(reduceFn);
 //   utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 4 })
 // );
 
-console.log(
-  utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 3 })
-);
+// console.log(
+//   utils.listFormat(["Bob", "Ben", "Tim", "Jane", "John"], { length: 3 })
+// );
+
+const test = async () => {
+  const p0 = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(2);
+    }, 10);
+  });
+
+  const res = await utils.promiseAll([p0]);
+  console.log("res", res);
+};
+
+test();
