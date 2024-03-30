@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 const generateMagicSquares = ({ dimensions }) => {
   const squares = utils.generateSquares({ dimensions });

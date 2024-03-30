@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 function isMagicSquare({ square, dimensions }) {
   const sums = [];

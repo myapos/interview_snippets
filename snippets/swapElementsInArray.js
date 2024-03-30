@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 //! it will accept an array and swap elements in position i,j
 //! it will returned the swapped array

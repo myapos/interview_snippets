@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 //! it will accept a list of arrays and check if an array exists in the list
 

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/validate-binary-search-tree/
-import * as utils from "./";
+import * as utils from ".";
 const isLeaf = (node) =>
   typeof node.val !== "undefined" && !node.left && !node.right;
 

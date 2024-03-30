@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 const compareArrays = ({ arr1, arr2 }) => {
   if (arr1.length !== arr2.length) {

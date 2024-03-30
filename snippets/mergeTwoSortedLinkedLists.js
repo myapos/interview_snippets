@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 const buildLinkedListA = () => {
   const list = new utils.List.LinkedList();

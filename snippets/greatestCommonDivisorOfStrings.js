@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 const findLargestAndSmallestStrings = (str1, str2) => {
   let largestStr = str1;
   let smallestStr = str2;

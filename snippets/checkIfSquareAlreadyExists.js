@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 function checkIfSquareAlreadyExists(squares, squareToCheck) {
   let squareExists = false;

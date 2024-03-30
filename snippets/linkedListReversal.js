@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 const printListWithRecursion = (list, collect) => {
   if (list.next === null) {

@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 const findKthLargest = (nums, k) => {
   console.log("nums", nums);

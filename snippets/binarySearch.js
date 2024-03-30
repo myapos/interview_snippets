@@ -1,4 +1,4 @@
-import * as utils from "./";
+import * as utils from ".";
 
 /**
  * It will accept a sorted array and an element to search for using recursion.
