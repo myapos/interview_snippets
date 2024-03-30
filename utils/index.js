@@ -131,16 +131,20 @@ import uniqueArray from "./uniqueArray";
 import validParentheses from "./validParentheses";
 import validSudoku from "./validSudoku";
 import wallsAndGates from "./wallsAndGates";
+import classNames from "./classNames";
+import combinationSum2 from "./combinationSum2";
+import deepEqual from "./deepEqual";
+import generateParentheses from "./generateParentheses";
+import letterCombinations from "./letterCombinations";
+import listFormat from "./listFormat";
+import numTilePossibilities from "./numTilePossibilities";
+import palindromePartitioning from "./palindromePartitioning";
+import permute from "./permute";
+import promiseAll from "./promiseAll";
+import readBinaryWatch from "./readBinaryWatch";
+import removeInvalidParentheses from "./readBinaryWatch";
 
 export {
-  deepEqual,
-  promiseAll,
-  listFormat,
-  classNames,
-  curry,
-  numTilePossibilities,
-  removeInvalidParentheses,
-  readBinaryWatch,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
@@ -154,6 +158,7 @@ export {
   checkArrayExistence,
   checkEveryRowColumnContainAllNumbers,
   checkIfSquareAlreadyExists,
+  classNames,
   coinChange,
   combinations,
   combinationsOfLength,
@@ -171,9 +176,9 @@ export {
   cycle,
   decimalToBinary,
   deepCopy,
+  deepEqual,
   depthFirstSearch,
   dfsGraph,
-  diagonalPrime,
   diagonalPrime,
   factorial,
   factorialTCR,
@@ -209,6 +214,7 @@ export {
   linkedListReversal,
   linkedListReversalFromRange,
   List,
+  listFormat,
   longestSubStrWithoutRepeatingChars,
   maxAreaOfIslands,
   maxBy,
@@ -233,6 +239,7 @@ export {
   networkDelayTime,
   numIslands,
   numOfMinutes,
+  numTilePossibilities,
   omitFourDigit,
   orangesRotting,
   palindrome,
@@ -243,11 +250,14 @@ export {
   postorderTraversal,
   preorderTraversal,
   printListWithRecursionPure,
+  promiseAll,
   promiseRace,
   quickSelect,
   quickSort,
   range,
   rangeRight,
+  readBinaryWatch,
+  removeInvalidParentheses,
   reverseBetween,
   reverseList,
   reverseListWithArray,
@@ -259,13 +269,11 @@ export {
   selectionSort,
   setZeroes,
   skewedTreeFromArray,
-  skewedTreeFromArray,
   squaresComparison,
   sudokuSolver,
   sum,
   sum2,
   sumOfArray,
-  surroundedRegions,
   surroundedRegions,
   swapElementsInArray,
   swapNodesInList,
