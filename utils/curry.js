@@ -1,21 +1,58 @@
-// https://www.greatfrontend.com/questions/javascript/curry?list=one-week
+function curry_(func) {
+  let args = [];
+
+  function calc(val) {
+    if (func.length === 0) {
+      return func.call(this);
+    }
+
+    if (val === undefined) {
+      return calc.bind(this);
+    }
+
+    args.push(val);
+    if (args.length === func.length) {
+      let finalArgs = [...args];
+      args = []; // reset
+      return func.call(this, ...finalArgs);
+    }
+
+    // this refers to object scope
+    return calc.bind(this);
+  }
+
+  return calc;
+
+  //   const curried = function (val) {
+
+  //     if (func.length === 0) {
+  //       return func.call(this);
+  //     }
+
+  //     args.push(val);
+
+  //     if (args.length === func.length) {
+  //       let finalArgs = [...args];
+  //       args = []; // reset
+  //       return func.call(this, ...finalArgs);
+  //     }
+
+  //     return curried.bind(this);
+  //   };
+
+  //   return curried;
+}
+
 function curry(func) {
-  const listArgs = [];
-  return function curried(arg) {
-    if (arg) {
-      listArgs.push(arg);
-    }
-    console.log("arg", arg, " listArgs", listArgs);
+  function curried(...vals) {
+    const fn = curried.bind(this, ...vals);
 
-    if (listArgs.length === func.length) {
-      const retValue = func.apply(this, listArgs);
-      // reset
-      listArgs.length = 0;
-      return retValue;
-    }
+    fn[Symbol.toPrimitive] = () => func.apply(this, vals);
 
-    return (arg) => curried.call(this, arg);
-  };
+    return fn;
+  }
+
+  return curried;
 }
 
 export default curry;
