@@ -14,9 +14,11 @@ import checkArrayElementsEquality from "./checkArrayElementsEquality.js";
 import checkArrayExistence from "./checkArrayExistence.js";
 import checkEveryRowColumnContainAllNumbers from "./checkEveryRowColumnContainAllNumbers.js";
 import checkIfSquareAlreadyExists from "./checkIfSquareAlreadyExists.js";
+import classNames from "./classNames.js";
 import coinChange from "./coinChange.js";
 import combinations from "./combinations.js";
 import combinationsOfLength from "./combinationsOfLength.js";
+import combinationSum2 from "./combinationSum2.js";
 import compareArrays from "./compareArrays.js";
 import compareElements from "./compareElements.js";
 import compose from "./compose.js";
@@ -29,7 +31,9 @@ import createNumbersInRange from "./createNumbersInRange.js";
 import curry from "./curry.js";
 import cycle from "./cycle.js";
 import decimalToBinary from "./decimalToBinary.js";
+import deepClone from "./deepClone";
 import deepCopy from "./deepCopy.js";
+import deepEqual from "./deepEqual.js";
 import depthFirstSearch from "./depthFirstSearch.js";
 import dfsGraph from "./dfsGraph.js";
 import diagonalPrime from "./diagonalPrime.js";
@@ -45,6 +49,7 @@ import functionComposition from "./functionComposition.js";
 import generateCombinations from "./generateCombinations.js";
 import generateCombinationSwaps from "./generateCombinationSwaps.js";
 import generateMagicSquares from "./generateMagicSquares.js";
+import generateParentheses from "./generateParentheses.js";
 import generatePossiblePermutationsRecursiveHeaps from "./generatePossiblePermutations.js";
 import generateSingleSquare from "./generateSingleSquare.js";
 import generateSquares from "./generateSquares.js";
@@ -53,6 +58,7 @@ import greatestCommonDivisor from "./greatestCommonDivisor.js";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings.js";
 import groupBy from "./groupBy.js";
 import heapSort from "./heapSort.js";
+import heapSortGFE from "./heapSortGFE";
 import inorderTraversal from "./inorderTraversal.js";
 import insertionSort from "./insertionSort.js";
 import intersection from "./intersection.js";
@@ -60,9 +66,11 @@ import invertTree from "./invertTree.js";
 import isMagicSquare from "./isMagicSquare.js";
 import isValidBST from "./isValidBST.js";
 import knightProbability from "./knightProbability.js";
+import letterCombinations from "./letterCombinations.js";
 import levelOrder from "./levelOrder.js";
 import linkedListReversal from "./linkedListReversal.js";
 import linkedListReversalFromRange from "./linkedListReversalFromRange.js";
+import listFormat from "./listFormat.js";
 import longestSubStrWithoutRepeatingChars from "./longestSubStrWithoutRepeatingChars.js";
 import maxAreaOfIslands from "./maxAreaOfIslands.js";
 import maxBy from "./maxBy.js";
@@ -87,19 +95,25 @@ import naryPreorderTraversal from "./naryPreorderTraversal.js";
 import networkDelayTime from "./networkDelayTime.js";
 import numIslands from "./numIslands.js";
 import numOfMinutes from "./numOfMinutes.js";
+import numTilePossibilities from "./numTilePossibilities.js";
 import omitFourDigit from "./omitFourDigit.js";
 import orangesRotting from "./orangesRotting.js";
 import palindrome from "./palindrome.js";
+import palindromePartitioning from "./palindromePartitioning.js";
+import permute from "./permute.js";
 import pickingNumbers from "./picikingNumbers.js";
 import popArray from "./popArray.js";
 import postorderTraversal from "./postorderTraversal.js";
 import preorderTraversal from "./preorderTraversal.js";
 import printListWithRecursionPure from "./printListWithRecursionPure.js";
+import promiseAll from "./promiseAll.js";
 import promiseRace from "./promiseRace.js";
 import quickSelect from "./quickSelect.js";
 import quickSort from "./quickSort.js";
 import range from "./range.js";
 import rangeRight from "./rangeRight.js";
+import readBinaryWatch from "./readBinaryWatch.js";
+import removeInvalidParentheses from "./readBinaryWatch.js";
 import reverseBetween from "./reverseBetween.js";
 import reverseList from "./reverseList.js";
 import reverseListWithArray from "./reverseListWithArray.js";
@@ -119,6 +133,7 @@ import sumOfArray from "./sumOfArray.js";
 import surroundedRegions from "./surroundedRegions.js";
 import swapElementsInArray from "./swapElementsInArray.js";
 import swapNodesInList from "./swapNodesInList.js";
+import textSearch from "./textSearch.js";
 import topologicalSort from "./topologicalSort.js";
 import transpose from "./transpose.js";
 import trappingRainWater from "./trappingRainWater.js";
@@ -131,18 +146,6 @@ import uniqueArray from "./uniqueArray.js";
 import validParentheses from "./validParentheses.js";
 import validSudoku from "./validSudoku.js";
 import wallsAndGates from "./wallsAndGates.js";
-import classNames from "./classNames.js";
-import combinationSum2 from "./combinationSum2.js";
-import deepEqual from "./deepEqual.js";
-import generateParentheses from "./generateParentheses.js";
-import letterCombinations from "./letterCombinations.js";
-import listFormat from "./listFormat.js";
-import numTilePossibilities from "./numTilePossibilities.js";
-import palindromePartitioning from "./palindromePartitioning.js";
-import permute from "./permute.js";
-import promiseAll from "./promiseAll.js";
-import readBinaryWatch from "./readBinaryWatch.js";
-import removeInvalidParentheses from "./readBinaryWatch.js";
 
 export {
   almostAPalindrome,
@@ -175,6 +178,7 @@ export {
   curry,
   cycle,
   decimalToBinary,
+  deepClone,
   deepCopy,
   deepEqual,
   depthFirstSearch,
@@ -202,6 +206,7 @@ export {
   greatestCommonDivisorOfStrings,
   groupBy,
   heapSort,
+  heapSortGFE,
   inorderTraversal,
   insertionSort,
   intersection,
@@ -277,6 +282,7 @@ export {
   surroundedRegions,
   swapElementsInArray,
   swapNodesInList,
+  textSearch,
   topologicalSort,
   transpose,
   trappingRainWater,
