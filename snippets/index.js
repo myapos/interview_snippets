@@ -62,6 +62,8 @@ import heapSortGFE from "./heapSortGFE";
 import inorderTraversal from "./inorderTraversal.js";
 import insertionSort from "./insertionSort.js";
 import intersection from "./intersection.js";
+import intersectionBy from "./intersectionBy.js";
+import intersectionWith from "./intersectionWith.js";
 import invertTree from "./invertTree.js";
 import isMagicSquare from "./isMagicSquare.js";
 import isValidBST from "./isValidBST.js";
@@ -142,10 +144,14 @@ import TreeNodeClass from "./TreeNodeClass.js";
 import Trie from "./Trie.js";
 import twoSum from "./twoSum.js";
 import typedOutStrings from "./typedOutStrings.js";
+import unionBy from "./unionBy.js";
+import uniqBy from "./uniqBy.js";
 import uniqueArray from "./uniqueArray.js";
 import validParentheses from "./validParentheses.js";
 import validSudoku from "./validSudoku.js";
 import wallsAndGates from "./wallsAndGates.js";
+import camelCaseKeys from "./camelCaseKeys.js";
+import jsonStringify from "./jsonStringify.js";
 
 export {
   almostAPalindrome,
@@ -156,6 +162,7 @@ export {
   breadthFirstSearch,
   breadthFirstSearchGFE,
   buildLinkedList,
+  camelCaseKeys,
   canFinish,
   checkArrayElementsEquality,
   checkArrayExistence,
@@ -210,9 +217,12 @@ export {
   inorderTraversal,
   insertionSort,
   intersection,
+  intersectionBy,
+  intersectionWith,
   invertTree,
   isMagicSquare,
   isValidBST,
+  jsonStringify,
   knightProbability,
   letterCombinations,
   levelOrder,
@@ -292,6 +302,8 @@ export {
   Trie,
   twoSum,
   typedOutStrings,
+  unionBy,
+  uniqBy,
   uniqueArray,
   validParentheses,
   validSudoku,
