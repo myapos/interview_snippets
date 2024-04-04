@@ -1,6 +1,9 @@
-// https://www.greatfrontend.com/questions/javascript/json-stringify
+/**
+ * @param {*} value
+ * @return {string}
+ */
 export default function jsonStringify(value) {
-  function parse(value, isInitialized) {
+  function parse(value) {
     if (
       typeof value === "number" ||
       typeof value === "boolean" ||
@@ -19,7 +22,7 @@ export default function jsonStringify(value) {
       let str;
 
       str = value.reduce((acc, item, idx) => {
-        const stringifiedItem = parse(item, isInitialized);
+        const stringifiedItem = parse(item);
         return idx < value.length - 1
           ? `${acc}${stringifiedItem},`
           : `${acc}${stringifiedItem}`;
@@ -31,14 +34,13 @@ export default function jsonStringify(value) {
     if (typeof value === "object") {
       let objStr = `{`;
 
-      Object.entries(value).map(([key, item], index) => {
+      Object.entries(value).forEach(([key, item], index) => {
         const delimiter = index === Object.keys(value).length - 1 ? "" : ",";
-
-        objStr = `${objStr}${parse(key, '"')}:${parse(item, true)}${delimiter}`;
+        objStr = `${objStr}${parse(key)}:${parse(item)}${delimiter}`;
       });
       return `${objStr}}`;
     }
   }
 
-  return parse(value, false);
+  return parse(value);
 }

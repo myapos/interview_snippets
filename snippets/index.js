@@ -9,6 +9,7 @@ import binarySearchLoops from "./binarySearchLoops.js";
 import breadthFirstSearch from "./breadthFirstSearch.js";
 import breadthFirstSearchGFE from "./breadthFirstSearchGFE.js";
 import buildLinkedList from "./buildLinkedList.js";
+import camelCaseKeys from "./camelCaseKeys.js";
 import canFinish from "./courseSchedule.js";
 import checkArrayElementsEquality from "./checkArrayElementsEquality.js";
 import checkArrayExistence from "./checkArrayExistence.js";
@@ -34,6 +35,7 @@ import decimalToBinary from "./decimalToBinary.js";
 import deepClone from "./deepClone";
 import deepCopy from "./deepCopy.js";
 import deepEqual from "./deepEqual.js";
+import deepMerge from "./deepMerge.js";
 import depthFirstSearch from "./depthFirstSearch.js";
 import dfsGraph from "./dfsGraph.js";
 import diagonalPrime from "./diagonalPrime.js";
@@ -59,6 +61,7 @@ import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings.js"
 import groupBy from "./groupBy.js";
 import heapSort from "./heapSort.js";
 import heapSortGFE from "./heapSortGFE";
+import identicalDOMTrees from "./identicalDOMTrees.js";
 import inorderTraversal from "./inorderTraversal.js";
 import insertionSort from "./insertionSort.js";
 import intersection from "./intersection.js";
@@ -67,9 +70,11 @@ import intersectionWith from "./intersectionWith.js";
 import invertTree from "./invertTree.js";
 import isMagicSquare from "./isMagicSquare.js";
 import isValidBST from "./isValidBST.js";
+import jsonStringify from "./jsonStringify.js";
 import knightProbability from "./knightProbability.js";
 import letterCombinations from "./letterCombinations.js";
 import levelOrder from "./levelOrder.js";
+import limit from "./limit.js";
 import linkedListReversal from "./linkedListReversal.js";
 import linkedListReversalFromRange from "./linkedListReversalFromRange.js";
 import listFormat from "./listFormat.js";
@@ -125,6 +130,7 @@ import searchMatrix from "./searchMatrix.js";
 import searchRange from "./searchRange.js";
 import selectData from "./selectData.js";
 import selectionSort from "./selectionSort.js";
+import serializeHTML from "./serializeHTML.js";
 import setZeroes from "./setZeroes.js";
 import skewedTreeFromArray from "./skewedTreeFromArray.js";
 import squaresComparison from "./squaresComparison.js";
@@ -142,6 +148,7 @@ import trappingRainWater from "./trappingRainWater.js";
 import TreeNode from "./TreeNode.js";
 import TreeNodeClass from "./TreeNodeClass.js";
 import Trie from "./Trie.js";
+import turtle from "./turtle.js";
 import twoSum from "./twoSum.js";
 import typedOutStrings from "./typedOutStrings.js";
 import unionBy from "./unionBy.js";
@@ -150,8 +157,6 @@ import uniqueArray from "./uniqueArray.js";
 import validParentheses from "./validParentheses.js";
 import validSudoku from "./validSudoku.js";
 import wallsAndGates from "./wallsAndGates.js";
-import camelCaseKeys from "./camelCaseKeys.js";
-import jsonStringify from "./jsonStringify.js";
 
 export {
   almostAPalindrome,
@@ -188,6 +193,7 @@ export {
   deepClone,
   deepCopy,
   deepEqual,
+  deepMerge,
   depthFirstSearch,
   dfsGraph,
   diagonalPrime,
@@ -214,6 +220,7 @@ export {
   groupBy,
   heapSort,
   heapSortGFE,
+  identicalDOMTrees,
   inorderTraversal,
   insertionSort,
   intersection,
@@ -226,6 +233,7 @@ export {
   knightProbability,
   letterCombinations,
   levelOrder,
+  limit,
   linkedListReversal,
   linkedListReversalFromRange,
   List,
@@ -282,6 +290,7 @@ export {
   searchRange,
   selectData,
   selectionSort,
+  serializeHTML,
   setZeroes,
   skewedTreeFromArray,
   squaresComparison,
@@ -300,6 +309,7 @@ export {
   TreeNode,
   TreeNodeClass,
   Trie,
+  turtle,
   twoSum,
   typedOutStrings,
   unionBy,
