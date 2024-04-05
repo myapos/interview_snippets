@@ -1,45 +1,45 @@
 // https://www.greatfrontend.com/questions/javascript/promise-all?list=one-week
-const promiseAll = (iterable) => {
-  if (iterable.length === 0) return [];
-  let countPromises = 0;
-
+/**
+ * @param {Array} iterable
+ * @return {Promise<Array>}
+ */
+export default function promiseAll(iterable) {
   return new Promise((resolve, reject) => {
-    const result = new Array(iterable.length).fill("-1");
+    try {
+      if (iterable.length === 0) {
+        resolve([]);
+      }
 
-    for (let index = 0; index < iterable.length; index++) {
-      const promise = iterable[index];
+      let promisesLength = iterable.length;
+      let result = new Array(promisesLength); // create an array with empty slots
+      let count = 0;
 
-      const handlePromise = (i) => {
-        const isPromise = promise?.then;
-        if (isPromise) {
-          promise
-            .then((value) => {
-              result[i] = value;
-              countPromises++;
-
-              if (countPromises === iterable.length) {
-                resolve(result);
-              }
-            })
-            .catch((e) => {
-              reject(e);
-            });
-          return;
-        }
-
-        // cases where the item is not a promise
-        result[i] = promise;
-
-        countPromises++;
-
-        if (countPromises === iterable.length) {
+      const checkResolve = () => {
+        if (count === promisesLength) {
           resolve(result);
         }
       };
 
-      handlePromise(index);
+      iterable.forEach((item, idx) => {
+        const handlePromise = (val) => {
+          result[idx] = val;
+          count++;
+          checkResolve();
+        };
+
+        if (item instanceof Promise) {
+          item.then(handlePromise).catch((error) => {
+            reject(error);
+          });
+
+          return;
+        }
+
+        // non promise items
+        Promise.resolve(item).then(handlePromise);
+      });
+    } catch (error) {
+      reject(error);
     }
   });
-};
-
-export default promiseAll;
+}

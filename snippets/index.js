@@ -115,6 +115,8 @@ import postorderTraversal from "./postorderTraversal.js";
 import preorderTraversal from "./preorderTraversal.js";
 import printListWithRecursionPure from "./printListWithRecursionPure.js";
 import promiseAll from "./promiseAll.js";
+import promiseAllSettled from "./promiseAllSettled.js";
+import promiseAny from "./promiseAny.js";
 import promiseMerge from "./promiseMerge.js";
 import promiseRace from "./promiseRace.js";
 import promiseResolve from "./promiseResolve";
@@ -163,8 +165,9 @@ import uniqueArray from "./uniqueArray.js";
 import validParentheses from "./validParentheses.js";
 import validSudoku from "./validSudoku.js";
 import wallsAndGates from "./wallsAndGates.js";
-
+import compact from "./compact.js";
 export {
+  compact,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
@@ -281,6 +284,8 @@ export {
   preorderTraversal,
   printListWithRecursionPure,
   promiseAll,
+  promiseAllSettled,
+  promiseAny,
   promiseMerge,
   promiseRace,
   promiseResolve,
