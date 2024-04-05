@@ -79,6 +79,7 @@ import linkedListReversal from "./linkedListReversal.js";
 import linkedListReversalFromRange from "./linkedListReversalFromRange.js";
 import listFormat from "./listFormat.js";
 import longestSubStrWithoutRepeatingChars from "./longestSubStrWithoutRepeatingChars.js";
+import mapAsync from "./mapAsync.js";
 import maxAreaOfIslands from "./maxAreaOfIslands.js";
 import maxBy from "./maxBy.js";
 import maxDepth from "./maxDepth.js";
@@ -114,7 +115,11 @@ import postorderTraversal from "./postorderTraversal.js";
 import preorderTraversal from "./preorderTraversal.js";
 import printListWithRecursionPure from "./printListWithRecursionPure.js";
 import promiseAll from "./promiseAll.js";
+import promiseMerge from "./promiseMerge.js";
 import promiseRace from "./promiseRace.js";
+import promiseResolve from "./promiseResolve";
+import promiseTimeout from "./promiseTimeout.js";
+import promisify from "./promisify.js";
 import quickSelect from "./quickSelect.js";
 import quickSort from "./quickSort.js";
 import range from "./range.js";
@@ -142,6 +147,7 @@ import surroundedRegions from "./surroundedRegions.js";
 import swapElementsInArray from "./swapElementsInArray.js";
 import swapNodesInList from "./swapNodesInList.js";
 import textSearch from "./textSearch.js";
+import throttle from "./throttle.js";
 import topologicalSort from "./topologicalSort.js";
 import transpose from "./transpose.js";
 import trappingRainWater from "./trappingRainWater.js";
@@ -239,6 +245,7 @@ export {
   List,
   listFormat,
   longestSubStrWithoutRepeatingChars,
+  mapAsync,
   maxAreaOfIslands,
   maxBy,
   maxDepth,
@@ -274,7 +281,11 @@ export {
   preorderTraversal,
   printListWithRecursionPure,
   promiseAll,
+  promiseMerge,
   promiseRace,
+  promiseResolve,
+  promiseTimeout,
+  promisify,
   quickSelect,
   quickSort,
   range,
@@ -302,6 +313,7 @@ export {
   swapElementsInArray,
   swapNodesInList,
   textSearch,
+  throttle,
   topologicalSort,
   transpose,
   trappingRainWater,
