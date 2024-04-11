@@ -20,6 +20,7 @@ import coinChange from "./coinChange.js";
 import combinations from "./combinations.js";
 import combinationsOfLength from "./combinationsOfLength.js";
 import combinationSum2 from "./combinationSum2.js";
+import compact from "./compact.js";
 import compareArrays from "./compareArrays.js";
 import compareElements from "./compareElements.js";
 import compose from "./compose.js";
@@ -29,16 +30,21 @@ import costValue from "./costValue.js";
 import countBy from "./countBy.js";
 import counter from "./counter.js";
 import createNumbersInRange from "./createNumbersInRange.js";
+import createResumableInterval from "./createResumableInterval.js";
 import curry from "./curry.js";
 import cycle from "./cycle.js";
+import debounce from "./debounce.js";
 import decimalToBinary from "./decimalToBinary.js";
 import deepClone from "./deepClone";
 import deepCopy from "./deepCopy.js";
 import deepEqual from "./deepEqual.js";
+import deepMap from "./deepMap.js";
 import deepMerge from "./deepMerge.js";
+import deepOmit from "./deepOmit.js";
 import depthFirstSearch from "./depthFirstSearch.js";
 import dfsGraph from "./dfsGraph.js";
 import diagonalPrime from "./diagonalPrime.js";
+import EventEmitter from "./EventEmitter";
 import factorial from "./factorial.js";
 import factorialTCR from "./factorialTCR.js";
 import factorialWithCaching from "./factorialWithCaching.js";
@@ -56,6 +62,7 @@ import generatePossiblePermutationsRecursiveHeaps from "./generatePossiblePermut
 import generateSingleSquare from "./generateSingleSquare.js";
 import generateSquares from "./generateSquares.js";
 import get from "./get.js";
+import getElementsByClassName from "./getElementsByClassName.js";
 import greatestCommonDivisor from "./greatestCommonDivisor.js";
 import greatestCommonDivisorOfStrings from "./greatestCommonDivisorOfStrings.js";
 import groupBy from "./groupBy.js";
@@ -70,6 +77,7 @@ import intersectionWith from "./intersectionWith.js";
 import invertTree from "./invertTree.js";
 import isMagicSquare from "./isMagicSquare.js";
 import isValidBST from "./isValidBST.js";
+import jQueryClassManipulation from "./jQueryClassManipulation";
 import jsonStringify from "./jsonStringify.js";
 import knightProbability from "./knightProbability.js";
 import letterCombinations from "./letterCombinations.js";
@@ -90,7 +98,9 @@ import maximumDifference from "./maximumDifference.js";
 import maxProfit from "./maxProfit.js";
 import memoize from "./memoize.js";
 import memoizeAdvanced from "./memoizeAdvanced.js";
+import mergeData from "./dataMerging.js";
 import mergeSort from "./mergeSort.js";
+import mergeSort2 from "./mergeSort2.js";
 import mergeTwoSortedLinkedLists from "./mergeTwoSortedLinkedLists.js";
 import minBy from "./minBy.js";
 import minCostClimbingStairs from "./minCostClimbingStairs.js";
@@ -124,6 +134,7 @@ import promiseTimeout from "./promiseTimeout.js";
 import promisify from "./promisify.js";
 import quickSelect from "./quickSelect.js";
 import quickSort from "./quickSort.js";
+import quickSort2 from "./quickSort2.js";
 import range from "./range.js";
 import rangeRight from "./rangeRight.js";
 import readBinaryWatch from "./readBinaryWatch.js";
@@ -141,6 +152,7 @@ import serializeHTML from "./serializeHTML.js";
 import setZeroes from "./setZeroes.js";
 import skewedTreeFromArray from "./skewedTreeFromArray.js";
 import squaresComparison from "./squaresComparison.js";
+import squashObject from "./squashObject.js";
 import sudokuSolver from "./sudokuSolver.js";
 import sum from "./sum.js";
 import sum2 from "./sum2.js";
@@ -160,14 +172,14 @@ import turtle from "./turtle.js";
 import twoSum from "./twoSum.js";
 import typedOutStrings from "./typedOutStrings.js";
 import unionBy from "./unionBy.js";
+import unionWith from "./unionWith.js";
 import uniqBy from "./uniqBy.js";
 import uniqueArray from "./uniqueArray.js";
 import validParentheses from "./validParentheses.js";
 import validSudoku from "./validSudoku.js";
 import wallsAndGates from "./wallsAndGates.js";
-import compact from "./compact.js";
+
 export {
-  compact,
   almostAPalindrome,
   bellmanFord,
   bfsGraph,
@@ -187,6 +199,7 @@ export {
   combinations,
   combinationsOfLength,
   combinationSum2,
+  compact,
   compareArrays,
   compareElements,
   compose,
@@ -196,16 +209,21 @@ export {
   countBy,
   counter,
   createNumbersInRange,
+  createResumableInterval,
   curry,
   cycle,
+  debounce,
   decimalToBinary,
   deepClone,
   deepCopy,
   deepEqual,
+  deepMap,
   deepMerge,
+  deepOmit,
   depthFirstSearch,
   dfsGraph,
   diagonalPrime,
+  EventEmitter,
   factorial,
   factorialTCR,
   factorialWithCaching,
@@ -224,6 +242,7 @@ export {
   generateSingleSquare,
   generateSquares,
   get,
+  getElementsByClassName,
   greatestCommonDivisor,
   greatestCommonDivisorOfStrings,
   groupBy,
@@ -238,6 +257,7 @@ export {
   invertTree,
   isMagicSquare,
   isValidBST,
+  jQueryClassManipulation,
   jsonStringify,
   knightProbability,
   letterCombinations,
@@ -259,7 +279,9 @@ export {
   maxProfit,
   memoize,
   memoizeAdvanced,
+  mergeData,
   mergeSort,
+  mergeSort2,
   mergeTwoSortedLinkedLists,
   minBy,
   minCostClimbingStairs,
@@ -293,6 +315,7 @@ export {
   promisify,
   quickSelect,
   quickSort,
+  quickSort2,
   range,
   rangeRight,
   readBinaryWatch,
@@ -310,6 +333,7 @@ export {
   setZeroes,
   skewedTreeFromArray,
   squaresComparison,
+  squashObject,
   sudokuSolver,
   sum,
   sum2,
@@ -330,6 +354,7 @@ export {
   twoSum,
   typedOutStrings,
   unionBy,
+  unionWith,
   uniqBy,
   uniqueArray,
   validParentheses,
