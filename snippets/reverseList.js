@@ -42,3 +42,5 @@ var reverseList = function (head) {
 
   return previous;
 };
+
+export default reverseList;

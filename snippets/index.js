@@ -2,6 +2,7 @@ import { generatePossiblePermutationsSimpleRecursion } from "./generatePossibleP
 import * as List from "./List.js";
 import * as Tree from "./Tree.js";
 import almostAPalindrome from "./almostAPalindrome.js";
+import BackboneModel from "./BackboneModel.js";
 import bellmanFord from "./bellmanFord.js";
 import bfsGraph from "./bfsGraph.js";
 import binarySearch from "./binarySearch.js";
@@ -16,6 +17,7 @@ import checkArrayExistence from "./checkArrayExistence.js";
 import checkEveryRowColumnContainAllNumbers from "./checkEveryRowColumnContainAllNumbers.js";
 import checkIfSquareAlreadyExists from "./checkIfSquareAlreadyExists.js";
 import classNames from "./classNames.js";
+import classNames2 from "./classNames2.js";
 import coinChange from "./coinChange.js";
 import combinations from "./combinations.js";
 import combinationsOfLength from "./combinationsOfLength.js";
@@ -25,6 +27,7 @@ import compareArrays from "./compareArrays.js";
 import compareElements from "./compareElements.js";
 import compose from "./compose.js";
 import concat from "./concat.js";
+import conformsTo from "./conformsTo.js";
 import containerWithMostWater from "./containerWithMostWater.js";
 import costValue from "./costValue.js";
 import countBy from "./countBy.js";
@@ -36,6 +39,7 @@ import cycle from "./cycle.js";
 import debounce from "./debounce.js";
 import decimalToBinary from "./decimalToBinary.js";
 import deepClone from "./deepClone";
+import deepClone2 from "./deepClone2.js";
 import deepCopy from "./deepCopy.js";
 import deepEqual from "./deepEqual.js";
 import deepMap from "./deepMap.js";
@@ -79,6 +83,7 @@ import isMagicSquare from "./isMagicSquare.js";
 import isValidBST from "./isValidBST.js";
 import jQueryClassManipulation from "./jQueryClassManipulation";
 import jsonStringify from "./jsonStringify.js";
+import jsonStringify2 from "./jsonStringify2.js";
 import knightProbability from "./knightProbability.js";
 import letterCombinations from "./letterCombinations.js";
 import levelOrder from "./levelOrder.js";
@@ -160,7 +165,9 @@ import sumOfArray from "./sumOfArray.js";
 import surroundedRegions from "./surroundedRegions.js";
 import swapElementsInArray from "./swapElementsInArray.js";
 import swapNodesInList from "./swapNodesInList.js";
+import tableOfContents from "./tableOfContents.js";
 import textSearch from "./textSearch.js";
+import textSearch2 from "./textSearch2";
 import throttle from "./throttle.js";
 import topologicalSort from "./topologicalSort.js";
 import transpose from "./transpose.js";
@@ -181,6 +188,7 @@ import wallsAndGates from "./wallsAndGates.js";
 
 export {
   almostAPalindrome,
+  BackboneModel,
   bellmanFord,
   bfsGraph,
   binarySearch,
@@ -195,6 +203,7 @@ export {
   checkEveryRowColumnContainAllNumbers,
   checkIfSquareAlreadyExists,
   classNames,
+  classNames2,
   coinChange,
   combinations,
   combinationsOfLength,
@@ -204,6 +213,7 @@ export {
   compareElements,
   compose,
   concat,
+  conformsTo,
   containerWithMostWater,
   costValue,
   countBy,
@@ -215,6 +225,7 @@ export {
   debounce,
   decimalToBinary,
   deepClone,
+  deepClone2,
   deepCopy,
   deepEqual,
   deepMap,
@@ -259,6 +270,7 @@ export {
   isValidBST,
   jQueryClassManipulation,
   jsonStringify,
+  jsonStringify2,
   knightProbability,
   letterCombinations,
   levelOrder,
@@ -341,7 +353,9 @@ export {
   surroundedRegions,
   swapElementsInArray,
   swapNodesInList,
+  tableOfContents,
   textSearch,
+  textSearch2,
   throttle,
   topologicalSort,
   transpose,
